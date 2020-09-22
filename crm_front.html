@@ -79,6 +79,114 @@
     </div>
     <div class="nav-text">Адреса общежитий в Москве</div>
     <div class="content-block">
+      <div class="content-right">
+        <div class="reservations-block">
+          <div class="reservations-name">
+            Бронируйте сейчас <i class="fas fa-info-circle"></i>
+          </div>
+          <div class="reservations-row">
+            <div class="reservation-name-block">
+              <label for="reservation-name">ФИО</label>
+              <input type="text" class="reservation-name" placeholder="Иванов Иван Иванович" name="reservation-name"
+                id="reservation-name">
+            </div>
+            <div class="reservation-place-block">
+              <label for="reservation-place">Общежитие</label>
+              <select type="text" class="reservation-place" name="reservation-place" id="reservation-place">
+                <option selected="" value="Выставочная">Выставочная</option>
+                <option value="Выставочная2">Выставочная2</option>
+              </select>
+            </div>
+          </div>
+          <div class="reservations-row">
+            <div class="content-row">
+              <div class="content-row-left">
+                <label for="reservation-date-in">День прибытия</label>
+                <span class="date-wrapper">
+                  <input type="date" placeholder="23.08.2021" value="2021-08-23" name="reservation-date-in"
+                    id="reservation-date-in">
+                  <i class="fas fa-calendar-alt"></i>
+                </span><span>&nbsp;—&nbsp;</span>
+              </div>
+              <div class="content-row-right">
+                <label for="reservation-date-out">День отъезда</label>
+                <span class="date-wrapper">
+                  <input type="date" placeholder="28.08.2021" value="2021-08-28" name="reservation-date-out"
+                    id="reservation-date-out">
+                  <i class="fas fa-calendar-alt"></i>
+                </span>
+              </div>
+            </div>
+            <div class="reservation-places-block">
+              <label for="reservation-places-value">Количество мест</label>
+              <div class="number-wrapper">
+                <input type="number" min="1" max="99" placeholder="1" name="reservation-places-value"
+                  id="reservation-places-value">
+              </div>
+            </div>
+          </div>
+          <div class="reservations-row">
+            <div class="reservation-phone-block">
+              <label for="reservation-phone-value">Номер телефона</label>
+              <input type="text" class="reservation-phone-value" placeholder="" name="reservation-phone-value"
+                id="reservation-phone-value">
+            </div>
+            <div class="reservation-email-block">
+              <label for="reservation-email-value">Электронная почта</label>
+              <input type="text" class="reservation-email-value" placeholder="" name="reservation-email-value"
+                id="reservation-email-value">
+            </div>
+          </div>
+          <button class="btn-green">Забронировать</button>
+        </div>
+        <div class="reviews-block">
+          <div class="reviews-name">
+            Отзывы
+          </div>
+          <div class="reviews-all">
+            <a href="/">Все отзывы (56)</a>
+          </div>
+          <div class="review-item">
+            <div class="review-author">Денис</div>
+            <div class="review-place">Общежитие возле метро Сокол</div>
+            <div class="review-text">Здравствуйте! Очень чистый и уютный хостел матрасы, кровати всё новое нет никакой
+              живности объездил много
+              разных хостелов этот правда самый чистый и лучший, с работы идёшь как домой рядом все нужные магазины
+              через
+              дорогу пруд, парк после работы можно отдохнуть полюбоваться природой. Всем советую правда уют как дома!
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-author">Андрей</div>
+            <div class="review-place">Общежитие возле метро Сокол</div>
+            <div class="review-text">Я приезжаю работать в Москву не первый год. И вот снова я в Москве! Хочу
+              поделиться: общежитие по улице
+              Часовая – это хорошее место кому надо пожить с комфортном за недорого. Для рабочих этот вариант – то, что
+              нужно! По отзыву друга открыл сайт hostel.ms, связался по телефону, сделали мне бронь вообще без проблем.
+              Оплата при заселении. Встречают приветливо, кровать для сна удобная, принадлежности прилагаются, все для
+              хозяйства в наличии. Зачем снимать квартиру, когда есть такие удобные общежития.</div>
+          </div>
+          <button class="btn-green">Добавить отзыв</button>
+        </div>
+        <div class="articles-block">
+          <div class="articles-name">
+            Статьи
+          </div>
+          <div class="article-item">
+            <div class="article-name">Виды московских общежитий</div>
+            <div class="article-text">Жилье в общежитиях гостиничного типа как для физических лиц, так и для предприятий
+              в ЦАО, САО, СЗАО, ЮЗАО Москвы, а также в Домодедово.</div>
+            <div class="article-readmore"><a href="/">Читать полностью</a></div>
+          </div>
+          <div class="article-item">
+            <div class="article-name">Общежития гостиничного типа</div>
+            <div class="article-text">В таких общежитиях есть все необходимое для удобного проживания: кухня, душевые и
+              туалеты, стиральная машина,
+              телевизор, холодильник, микроволновая печь</div>
+            <div class="article-readmore"><a href="/">Читать полностью</a></div>
+          </div>
+        </div>
+      </div>
       <div class="content-left">
         <div class="hostel-item">
           <div class="hostel-img">
@@ -273,114 +381,6 @@
                 </button>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="content-right">
-        <div class="reservations-block">
-          <div class="reservations-name">
-            Бронируйте сейчас <i class="fas fa-info-circle"></i>
-          </div>
-          <div class="reservations-row">
-            <div class="reservation-name-block">
-              <label for="reservation-name">ФИО</label>
-              <input type="text" class="reservation-name" placeholder="Иванов Иван Иванович" name="reservation-name"
-                id="reservation-name">
-            </div>
-            <div class="reservation-place-block">
-              <label for="reservation-place">Общежитие</label>
-              <select type="text" class="reservation-place" name="reservation-place" id="reservation-place">
-                <option selected="" value="Выставочная">Выставочная</option>
-                <option value="Выставочная2">Выставочная2</option>
-              </select>
-            </div>
-          </div>
-          <div class="reservations-row">
-            <div class="content-row">
-              <div class="content-row-left">
-                <label for="reservation-date-in">День прибытия</label>
-                <span class="date-wrapper">
-                  <input type="date" placeholder="23.08.2021" value="2021-08-23" name="reservation-date-in"
-                    id="reservation-date-in">
-                  <i class="fas fa-calendar-alt"></i>
-                </span><span>&nbsp;—&nbsp;</span>
-              </div>
-              <div class="content-row-right">
-                <label for="reservation-date-out">День отъезда</label>
-                <span class="date-wrapper">
-                  <input type="date" placeholder="28.08.2021" value="2021-08-28" name="reservation-date-out"
-                    id="reservation-date-out">
-                  <i class="fas fa-calendar-alt"></i>
-                </span>
-              </div>
-            </div>
-            <div class="reservation-places-block">
-              <label for="reservation-places-value">Количество мест</label>
-              <div class="number-wrapper">
-                <input type="number" min="1" max="99" placeholder="1" name="reservation-places-value"
-                  id="reservation-places-value">
-              </div>
-            </div>
-          </div>
-          <div class="reservations-row">
-            <div class="reservation-phone-block">
-              <label for="reservation-phone-value">Номер телефона</label>
-              <input type="text" class="reservation-phone-value" placeholder="" name="reservation-phone-value"
-                id="reservation-phone-value">
-            </div>
-            <div class="reservation-email-block">
-              <label for="reservation-email-value">Электронная почта</label>
-              <input type="text" class="reservation-email-value" placeholder="" name="reservation-email-value"
-                id="reservation-email-value">
-            </div>
-          </div>
-          <button class="btn-green">Забронировать</button>
-        </div>
-        <div class="reviews-block">
-          <div class="reviews-name">
-            Отзывы
-          </div>
-          <div class="reviews-all">
-            <a href="/">Все отзывы (56)</a>
-          </div>
-          <div class="review-item">
-            <div class="review-author">Денис</div>
-            <div class="review-place">Общежитие возле метро Сокол</div>
-            <div class="review-text">Здравствуйте! Очень чистый и уютный хостел матрасы, кровати всё новое нет никакой
-              живности объездил много
-              разных хостелов этот правда самый чистый и лучший, с работы идёшь как домой рядом все нужные магазины
-              через
-              дорогу пруд, парк после работы можно отдохнуть полюбоваться природой. Всем советую правда уют как дома!
-            </div>
-          </div>
-          <div class="review-item">
-            <div class="review-author">Андрей</div>
-            <div class="review-place">Общежитие возле метро Сокол</div>
-            <div class="review-text">Я приезжаю работать в Москву не первый год. И вот снова я в Москве! Хочу
-              поделиться: общежитие по улице
-              Часовая – это хорошее место кому надо пожить с комфортном за недорого. Для рабочих этот вариант – то, что
-              нужно! По отзыву друга открыл сайт hostel.ms, связался по телефону, сделали мне бронь вообще без проблем.
-              Оплата при заселении. Встречают приветливо, кровать для сна удобная, принадлежности прилагаются, все для
-              хозяйства в наличии. Зачем снимать квартиру, когда есть такие удобные общежития.</div>
-          </div>
-          <button class="btn-green">Добавить отзыв</button>
-        </div>
-        <div class="articles-block">
-          <div class="articles-name">
-            Статьи
-          </div>
-          <div class="article-item">
-            <div class="article-name">Виды московских общежитий</div>
-            <div class="article-text">Жилье в общежитиях гостиничного типа как для физических лиц, так и для предприятий
-              в ЦАО, САО, СЗАО, ЮЗАО Москвы, а также в Домодедово.</div>
-            <div class="article-readmore"><a href="/">Читать полностью</a></div>
-          </div>
-          <div class="article-item">
-            <div class="article-name">Общежития гостиничного типа</div>
-            <div class="article-text">В таких общежитиях есть все необходимое для удобного проживания: кухня, душевые и
-              туалеты, стиральная машина,
-              телевизор, холодильник, микроволновая печь</div>
-            <div class="article-readmore"><a href="/">Читать полностью</a></div>
           </div>
         </div>
       </div>
