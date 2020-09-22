@@ -373,7 +373,7 @@ ul {
 }
 .reservations-block input[type="date"] {
   padding: 6px 10px;
-  max-width: 140px;
+  max-width: 144px;
 }
 .content-row {
   display: flex;
