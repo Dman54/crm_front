@@ -692,9 +692,11 @@ body.menu-open {
 
 @media (max-width: 1200px) {
   .content-block {
-    display: block;
+    /* display: block; */
+    flex-direction: column;
   }
   .content-right {
+    order: 1;
     margin-right: 0;
     margin-top: 30px;
     width: unset;
