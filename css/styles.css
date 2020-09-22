@@ -30,7 +30,7 @@ ul {
   padding-left: 55px;
   padding-right: 55px;
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -194,6 +194,9 @@ ul {
 .content-block {
   display: flex;
   margin-bottom: 30px;
+}
+.content-left {
+  flex: 1;
 }
 .content-left .hostel-item:not(:last-child) {
   margin-bottom: 20px;
