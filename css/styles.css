@@ -86,6 +86,10 @@ ul {
   align-items: center;
   color: #555555;
 }
+.topnav-first a:hover {
+  font-weight: bold;
+  color: #00AEAE;
+}
 .search-wrapper,
 .button-wrapper {
   padding-top: 15px;
@@ -122,6 +126,9 @@ ul {
   border: none;
   padding: 8px 29px;
 }
+.button-wrapper button:hover {
+  background: #00CBCB;
+}
 .topnav-second {
   display: flex;
   line-height: 1;
@@ -136,6 +143,10 @@ ul {
 }
 .topnav-second a {
   color: #555555;
+}
+.topnav-second a:hover {
+  font-weight: bold;
+  color: #00AEAE;
 }
 .logo {
   padding-top: 16px;
@@ -185,11 +196,32 @@ ul {
   cursor: auto;
 }
 .nav-text {
+  display: flex;
   font-size: 12px;
   line-height: 1;
-  color: #555555;
   margin-top: 29px;
   margin-bottom: 30px;
+}
+.nav-text >*:not(:last-child) {
+  margin-right: 11px;
+  position: relative;
+}
+.nav-text >*:not(:last-child)::after {
+  position: absolute;
+  right: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  background: #555555;
+}
+.nav-text >*:not(:first-child) {
+  margin-left: 11px;
+}
+.nav-text a {
+  color: #555555;
 }
 .content-block {
   display: flex;
@@ -279,6 +311,8 @@ ul {
   font-weight: bold;
   font-size: 16px;
   line-height: 1;
+}
+.hostel-phone a {
   color: #555555;
 }
 .hostel-buttons {
@@ -311,6 +345,9 @@ ul {
 }
 .get-calc {
   background: #0099EF;
+}
+.get-call:hover {
+  background: #00CBCB;
 }
 .content-right {
   margin-right: 30px;
@@ -358,6 +395,26 @@ ul {
   padding: 10px;
   line-height: 1;
   color: #555555;
+}
+.reservation-name-block,
+.reservation-place-block,
+.content-row-left,
+.content-row-right,
+.reservation-places-block,
+.reservation-phone-block,
+.reservation-email-block {
+  position: relative;
+}
+.reservations-block input.empty-error {
+  border: 2px solid #FF5050;
+}
+.empty-error-text {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  font-size: 14px;
+  line-height: 1;
+  color: #FF0000;
 }
 .reservations-block input[type="text"],
 .reservations-block input[type="number"] {
@@ -412,6 +469,9 @@ ul {
   color: #FFFFFF;
   width: 100%;
 }
+.btn-green:hover {
+  background: #00CBCB;
+}
 .reservations-block *::-webkit-inner-spin-button,
 .reservations-block *::-webkit-inner-spin-button {
   transform: rotate(90deg);
@@ -454,6 +514,9 @@ ul {
 .reviews-all a {
   text-decoration-line: underline;
   color: #00AEAE;
+}
+.reviews-all a:hover {
+  font-weight: bold;
 }
 .review-author {
   font-weight: bold;
@@ -501,7 +564,9 @@ ul {
   text-decoration-line: underline;
   color: #00AEAE;
 }
-
+.article-readmore a:hover {
+  font-weight: bold;
+}
 .footer {
   padding-top: 30px;
   background: #353535;
@@ -537,6 +602,10 @@ ul {
 }
 .bottommenu a {
   color: #8D8D8D;
+}
+.bottommenu a:hover {
+  font-weight: bold;
+  color: #D1D1D1;
 }
 .bottommenu .bottommenu-part:last-child {
   margin-right: 0;
@@ -576,6 +645,9 @@ ul {
 }
 .socials >*:last-child {
   margin-right: 0;
+}
+.socials >*:hover {
+  background: #00CBCB;
 }
 .modal-popup {
   left: 50%;
@@ -625,8 +697,9 @@ ul {
   width: 100%;
   justify-content: center;
 }
-.modal-popup-text {
-  display: flex;
+.modal-popup-text,
+.notice-text {
+  display: none;
   align-items: center;
   justify-content: center;
   font-size: 14px;
@@ -635,7 +708,12 @@ ul {
   margin-top: 16px;
   margin-bottom: -12px;
 }
-.modal-popup-text i {
+.modal-popup-text.active,
+.notice-text.active {
+  display: flex;
+}
+.modal-popup-text i,
+.notice-text i {
   font-size: 20px;
   margin-right: 10px;
 }

@@ -5,17 +5,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Список объектов</title>
-  <meta name="description" content="Список объектов">
-  <meta name="Keywords" content="Хостелы и общежития москвы, Список объектов">
+  <title>Карточка объекта</title>
+  <meta name="description" content="Карточка объекта">
+  <meta name="Keywords" content="Хостелы и общежития москвы, Карточка объекта">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   <link rel="stylesheet" href="css/reset.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles_object.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body id="firstbody" class="hostel-objects">
+<body id="firstbody" class="hostel-object">
   <div class="topmenu-small">
     <div class="container">
       <i class="fas fa-bars"></i>
@@ -66,22 +67,32 @@
       </ul>
     </nav>
   </div>
-  <header class="header">
-    <div class="container header-content">
-      <h1 class="h1">Хостелы и общежития москвы</h1>
-      <h2 class="h2">Официальная регистрация. Без депозитов и предоплаты.</h2>
-    </div>
-  </header>
   <div class="container">
     <div class="nav-tabs">
       <div class="nav-tab active">Общежития</div>
       <div class="nav-tab">Хостелы</div>
     </div>
     <div class="nav-text breadcrumbs">
-      <a href="/">Адреса общежитий в Москве</a>
+      <a href="/">Общежития</a>
+      <a href="/">Общежитие возле метро Сокол</a>
     </div>
     <div class="content-block">
       <div class="content-right">
+        <div class="call-block">
+          <div class="call-block-text">Звоните в любое время, Вам всегда рады!</div>
+          <div class="call-block-row">
+            <div class="call-block-phone">
+              <a href="tel:+74951881122">+7 (495) 188-11-22</a>
+            </div>
+            <div class="call-block-info">*Для лиц старше 16 лет</div>
+          </div>
+        </div>
+        <div class="object-menu-block">
+          <a href="/" class="object-menu-item">Обратная связь</a>
+          <a href="/" class="object-menu-item">Сотрудничество</a>
+          <a href="/" class="object-menu-item">Полезная информация</a>
+          <a href="/" class="object-menu-item">Вакансии</a>
+        </div>
         <div class="reservations-block">
           <form id="add-reservation-form" action="php/add-reservation.php" method="post">
             <div class="reservations-name">
@@ -196,155 +207,31 @@
         </div>
       </div>
       <div class="content-left">
-        <div class="hostel-item">
-          <div class="hostel-img">
-            <img src="img/obj1.jpg" alt="Хостел возле метро “Славянский бульвар”">
+        <div class="content-left-bottom">
+          <div class="youtube-video">
+            <iframe src="https://www.youtube.com/embed/IuC5gRFoAJ4" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""></iframe>
           </div>
-          <div class="hostel-content">
-            <div class="hostel-name">Хостел возле метро “Славянский бульвар”</div>
-            <div class="hostel-price">от <span class="hostel-price-value">250</span> руб</div>
-            <div class="hostel-address">г. Москва, 2й Красногвардейский проезд, 8с4</div>
-            <div class="hostel-advantages">
-              <div class="hostel-advantage">Бесплатный Wi-Fi</div>
-              <div class="hostel-advantage">Парковка рядом</div>
-            </div>
-            <div class="hostel-description">5 минут ходьбы от метро "Выставочная/Деловой центр" Филевской линии</div>
-            <div class="hostel-content-bottom">
-              <div class="hostel-phone"><a href="tel:+74951881122">+7 (495) 188-11-22</a></div>
-              <div class="hostel-buttons">
-                <button class="get-call">
-                  <i class="fas fa-phone-alt"></i>
-                  Заказать звонок
-                </button>
-                <a class="get-calc" href="/"><i class="fas fa-calculator"></i>Калькулятор</a>
+          <div class="ya_map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8d3c7c5f167a411533a23fcf8ee243298ce19509649da0768b6d7f9aca1782a&amp;source=constructor"
+              frameborder="0">
+            </iframe>
+          </div>
+          <div class="info-block">За последнее время данным объектом интересовалось - 28 человек. Поспешите узнать о
+            наличии мест.</div>
+          <div class="call-block">
+            <div class="call-block-text">Звоните в любое время, Вам всегда рады!</div>
+            <div class="call-block-row">
+              <div class="call-block-phone">
+                <a href="tel:+74951881122">+7 (495) 188-11-22</a>
               </div>
+              <div class="call-block-info">*Для лиц старше 16 лет</div>
             </div>
           </div>
         </div>
-        <div class="hostel-item">
-          <div class="hostel-img">
-            <img src="img/obj2.jpg" alt="Хостел возле метро “Октябрьское поле”">
-          </div>
-          <div class="hostel-content">
-            <div class="hostel-name">Хостел возле метро “Октябрьское поле”</div>
-            <div class="hostel-price">от <span class="hostel-price-value">233</span> руб</div>
-            <div class="hostel-address">г. Москва, ул. Маршала Тухачевского, 32 корп. 2</div>
-            <div class="hostel-advantages">
-              <div class="hostel-advantage">Бесплатный Wi-Fi</div>
-              <div class="hostel-advantage">Парковка рядом</div>
-            </div>
-            <div class="hostel-description">10 минут ходьбы от метро "Октябрьское Поле" Таганско-Краснопресненской линии
-            </div>
-            <div class="hostel-content-bottom">
-              <div class="hostel-phone"><a href="tel:+74951881122">+7 (495) 188-11-22</a></div>
-              <div class="hostel-buttons">
-                <button class="get-call">
-                  <i class="fas fa-phone-alt"></i>
-                  Заказать звонок
-                </button>
-                <a class="get-calc" href="/"><i class="fas fa-calculator"></i>Калькулятор</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="hostel-item">
-          <div class="hostel-img">
-            <img src="img/obj3.jpg" alt="Хостел возле метро “Сокол”">
-          </div>
-          <div class="hostel-content">
-            <div class="hostel-name">Хостел возле метро “Сокол”</div>
-            <div class="hostel-price">от <span class="hostel-price-value">233</span> руб</div>
-            <div class="hostel-address">г. Москва, ул.Часовая, 23/8</div>
-            <div class="hostel-advantages">
-              <div class="hostel-advantage">Бесплатный Wi-Fi</div>
-            </div>
-            <div class="hostel-description">10 минут ходьбы от метро "Сокол" и "Аэропорт" Замоскворецкой линии</div>
-            <div class="hostel-content-bottom">
-              <div class="hostel-phone"><a href="tel:+74951881122">+7 (495) 188-11-22</a></div>
-              <div class="hostel-buttons">
-                <button class="get-call">
-                  <i class="fas fa-phone-alt"></i>
-                  Заказать звонок
-                </button>
-                <a class="get-calc" href="/"><i class="fas fa-calculator"></i>Калькулятор</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="hostel-item">
-          <div class="hostel-img">
-            <img src="img/obj4.jpg" alt="Хостел возле метро “Щукинская”">
-          </div>
-          <div class="hostel-content">
-            <div class="hostel-name">Хостел возле метро “Щукинская”</div>
-            <div class="hostel-price">от <span class="hostel-price-value">233</span> руб</div>
-            <div class="hostel-address">г. Москва, ул. Паршина дом 16</div>
-            <div class="hostel-advantages">
-              <div class="hostel-advantage">Бесплатный Wi-Fi</div>
-            </div>
-            <div class="hostel-description">15 минут от метро "Щукинская" Таганско-Краснопресненской линии</div>
-            <div class="hostel-content-bottom">
-              <div class="hostel-phone"><a href="tel:+74951881122">+7 (495) 188-11-22</a></div>
-              <div class="hostel-buttons">
-                <button class="get-call">
-                  <i class="fas fa-phone-alt"></i>
-                  Заказать звонок
-                </button>
-                <a class="get-calc" href="/"><i class="fas fa-calculator"></i>Калькулятор</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="hostel-item">
-          <div class="hostel-img">
-            <img src="img/obj5.jpg" alt="Хостел возле метро “Кантемировская”">
-          </div>
-          <div class="hostel-content">
-            <div class="hostel-name">Хостел возле метро “Кантемировская”</div>
-            <div class="hostel-price">от <span class="hostel-price-value">280</span> руб</div>
-            <div class="hostel-address">г. Москва, ул. Промышленная, дом 8</div>
-            <div class="hostel-advantages">
-              <div class="hostel-advantage">Бесплатный Wi-Fi</div>
-              <div class="hostel-advantage">Парковка рядом</div>
-            </div>
-            <div class="hostel-description">10 минутах ходьбы от метро "Кантемировская" Замоскворецкой линии</div>
-            <div class="hostel-content-bottom">
-              <div class="hostel-phone"><a href="tel:+74951881122">+7 (495) 188-11-22</a></div>
-              <div class="hostel-buttons">
-                <button class="get-call">
-                  <i class="fas fa-phone-alt"></i>
-                  Заказать звонок
-                </button>
-                <a class="get-calc" href="/"><i class="fas fa-calculator"></i>Калькулятор</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="hostel-item">
-          <div class="hostel-img">
-            <img src="img/obj6.jpg" alt="Хостел возле метро “Сокольники”">
-          </div>
-          <div class="hostel-content">
-            <div class="hostel-name">Хостел возле метро “Сокольники”</div>
-            <div class="hostel-price">от <span class="hostel-price-value">200</span> руб</div>
-            <div class="hostel-address">г. Москва, Большая Остроумовская, 12</div>
-            <div class="hostel-advantages">
-              <div class="hostel-advantage">Бесплатный Wi-Fi</div>
-              <div class="hostel-advantage">Парковка рядом</div>
-            </div>
-            <div class="hostel-description">В шаговой доступности от метро "Сокольники"</div>
-            <div class="hostel-content-bottom">
-              <div class="hostel-phone"><a href="tel:+74951881122">+7 (495) 188-11-22</a></div>
-              <div class="hostel-buttons">
-                <button class="get-call">
-                  <i class="fas fa-phone-alt"></i>
-                  Заказать звонок
-                </button>
-                <a class="get-calc" href="/"><i class="fas fa-calculator"></i>Калькулятор</a>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <div class="hostel-item">
           <div class="hostel-img">
             <img src="img/obj7.jpg" alt="Хостел возле метро “Войковская”">

@@ -14,3 +14,21 @@ $("#closeicon2_added, #sidebar-overlay2").on("click", function () {
   $(".modal-popup").removeClass('active');
   $("body").removeClass('modal-open');
 });
+$("#add-reservation-form").submit(function (e) {
+  $(this).find("[jq-required]").removeClass("empty-error");
+  $(this).find(".empty-error-text").remove();
+  let isError = false;
+  $(this).find("[jq-required]").each(function (index) {
+    if (!$(this).val()) {
+      $(this).addClass("empty-error");
+      $(this).after("<div class='empty-error-text'>" + $(this).attr("error-text") + "</div>");
+      isError = true;
+    }
+  });
+  if (isError) {
+    e.preventDefault();
+  }
+  if (!isError) {
+    $(this).find(".notice-text").addClass("active");
+  }
+});

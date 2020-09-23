@@ -1,0 +1,117 @@
+.call-block {
+  padding: 30px;
+  background: #00AEAE;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+.call-block-text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
+  margin-bottom: 20px;
+  max-width: 220px;
+}
+.call-block-phone {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+.call-block-phone a {
+  color: #FFFFFF;
+}
+.call-block-info {
+  line-height: 130%;
+}
+
+.content-left .call-block-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.content-left .call-block {
+  padding: 20px;
+}
+.content-left .call-block-text {
+  max-width: unset;
+}
+.content-left .call-block-phone {
+  margin-bottom: 0;
+}
+
+.object-menu-block {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.object-menu-block .object-menu-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.object-menu-item {
+  display: block;
+  background: #FFFFFF;
+  border: 1px solid #E1F4F4;
+  border-radius: 5px;
+  padding: 13px 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #555555;
+}
+.object-menu-item:hover {
+  background: #FFA149;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  padding: 14px;
+}
+
+.youtube-video {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.youtube-video iframe,
+.ya_map iframe {
+  width: 100%;
+  height: calc((100vw - 580px)/2);
+}
+.content-left-bottom {
+  background: #fff;
+  padding: 30px;
+  margin-top: 30px;
+}
+.info-block {
+  background: #DEFBFF;
+  border-radius: 5px;
+  padding: 20px;
+  line-height: 130%;
+  color: #555555;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+@media (max-width: 1200px) {
+
+  .youtube-video iframe,
+  .ya_map iframe {
+    height: calc((100vw - 180px)/2);
+  }
+}
+
+@media (max-width: 930px) {
+
+  .youtube-video iframe,
+  .ya_map iframe {
+    height: calc((100vw - 124px)/2);
+  }
+}
+
+@media (max-width: 510px) {
+  
+  .youtube-video iframe {
+    height: calc((100vw - 80px)/2);
+  }
+  .ya_map iframe {
+    height: calc((100vw - 80px)*3/4);
+  }
+}
