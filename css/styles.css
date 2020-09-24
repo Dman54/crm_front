@@ -388,13 +388,17 @@ ul {
   display: block;
   margin-bottom: 10px;
 }
-.reservations-block input {
+.reservations-block input,
+.object-calc-content input {
   background: #FFFFFF;
   border: 1px solid #DAE4E9;
   border-radius: 3px;
   padding: 10px;
   line-height: 1;
   color: #555555;
+}
+.object-calc-content input {
+  border: 1px solid #E1F4F4;
 }
 .reservation-name-block,
 .reservation-place-block,
@@ -450,7 +454,8 @@ ul {
   right: 12px;
   top: 9px;
 }
-.reservations-block *::-webkit-calendar-picker-indicator {
+.reservations-block *::-webkit-calendar-picker-indicator,
+.object-calc-content *::-webkit-calendar-picker-indicator {
   opacity: 0;
   padding-right: 0;
   margin-right: -1px;
@@ -473,7 +478,9 @@ ul {
   background: #00CBCB;
 }
 .reservations-block *::-webkit-inner-spin-button,
-.reservations-block *::-webkit-inner-spin-button {
+.reservations-block *::-webkit-outer-spin-button,
+.object-calc-content *::-webkit-inner-spin-button,
+.object-calc-content *::-webkit-outer-spin-button {
   transform: rotate(90deg);
   margin-right: 15px;
   height: 50px;

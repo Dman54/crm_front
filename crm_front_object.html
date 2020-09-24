@@ -77,16 +77,16 @@
       <a href="/">Общежитие возле метро Сокол</a>
     </div>
     <div class="content-block">
-      <div class="content-right">
-        <div class="call-block">
-          <div class="call-block-text">Звоните в любое время, Вам всегда рады!</div>
-          <div class="call-block-row">
-            <div class="call-block-phone">
-              <a href="tel:+74951881122">+7 (495) 188-11-22</a>
-            </div>
-            <div class="call-block-info">*Для лиц старше 16 лет</div>
+      <div class="call-block">
+        <div class="call-block-text">Звоните в любое время, Вам всегда рады!</div>
+        <div class="call-block-row">
+          <div class="call-block-phone">
+            <a href="tel:+74951881122">+7 (495) 188-11-22</a>
           </div>
+          <div class="call-block-info">*Для лиц старше 16 лет</div>
         </div>
+      </div>
+      <div class="content-right">
         <div class="object-menu-block">
           <a href="/" class="object-menu-item">Обратная связь</a>
           <a href="/" class="object-menu-item">Сотрудничество</a>
@@ -207,32 +207,6 @@
         </div>
       </div>
       <div class="content-left">
-
-        <div class="hostel-item">
-          <div class="hostel-img">
-            <img src="img/obj7.jpg" alt="Хостел возле метро “Войковская”">
-          </div>
-          <div class="hostel-content">
-            <div class="hostel-name">Хостел возле метро “Войковская”</div>
-            <div class="hostel-price">от <span class="hostel-price-value">400</span> руб</div>
-            <div class="hostel-address">г. Москва, 2й Красногвардейский проезд, 8с4</div>
-            <div class="hostel-advantages">
-              <div class="hostel-advantage">Бесплатный Wi-Fi</div>
-              <div class="hostel-advantage">Парковка рядом</div>
-            </div>
-            <div class="hostel-description">В шаговой доступности от метро "Войковская" и "Стрешнево"</div>
-            <div class="hostel-content-bottom">
-              <div class="hostel-phone"><a href="tel:+74951881122">+7 (495) 188-11-22</a></div>
-              <div class="hostel-buttons">
-                <button class="get-call">
-                  <i class="fas fa-phone-alt"></i>
-                  Заказать звонок
-                </button>
-                <a class="get-calc" href="/"><i class="fas fa-calculator"></i>Калькулятор</a>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="content-left-top">
           <ul class="content-left-menu">
             <li><a href="#object-description">Описание</a></li>
@@ -268,7 +242,6 @@
             </div>
           </div>
         </div>
-
         <div class="content-left-bottom">
           <div class="object-top-info">
             <div class="object-name">Общежитие возле метро Сокол</div>
@@ -301,8 +274,98 @@
           </div>
           <div class="object-info-name" id="object-price">Цены за койко-место</div>
           <div class="object-price-content">
+            <div class="object-price-table">
+              <div class="table-names-row">
+                <div class="table-name-cell flex1">Комнаты</div>
+                <div class="table-name-cell flex6">Период оплаты</div>
+              </div>
+              <div class="table-days-row">
+                <div class="table-day-cell flex1"></div>
+                <div class="table-day-cell flex2">от 15 до 30 суток</div>
+                <div class="table-day-cell flex2">от 7 до 14 суток</div>
+                <div class="table-day-cell flex2">от 1 до 6 суток</div>
+              </div>
+              <div class="table-prices-row">
+                <div class="table-price-cell flex1">12 мест</div>
+                <div class="table-price-cell flex2">233 руб/сутки</div>
+                <div class="table-price-cell flex2">314 руб/сутки</div>
+                <div class="table-price-cell flex2">400 руб/сутки</div>
+              </div>
+              <div class="table-prices-row">
+                <div class="table-price-cell flex1">10 мест</div>
+                <div class="table-price-cell flex2">250 руб/сутки</div>
+                <div class="table-price-cell flex2">329 руб/сутки</div>
+                <div class="table-price-cell flex2">400 руб/сутки</div>
+              </div>
+              <div class="table-prices-row">
+                <div class="table-price-cell flex1">8 мест</div>
+                <div class="table-price-cell flex2">250 руб/сутки</div>
+                <div class="table-price-cell flex2">329 руб/сутки</div>
+                <div class="table-price-cell flex2">400 руб/сутки</div>
+              </div>
+              <div class="table-prices-row">
+                <div class="table-price-cell flex1">6 мест</div>
+                <div class="table-price-cell flex2">250 руб/сутки</div>
+                <div class="table-price-cell flex2">329 руб/сутки</div>
+                <div class="table-price-cell flex2">400 руб/сутки</div>
+              </div>
+            </div>
           </div>
-
+          <div class="object-calc-content">
+            <form id="calc-form" action="php/calc-form.php" method="get">
+              <div class="calc-first-row">
+                <i class="fas fa-calculator"></i>
+                <div>Для быстрого расчета стоимости проживания воспользуйтесь калькулятором:</div>
+              </div>
+              <div class="calc-second-row">
+                <div class="calc-second-dayin">
+                  <label for="calc-date-in">День прибытия</label>
+                  <span class="date-wrapper">
+                    <input type="date" placeholder="23.08.2021" value="2021-08-23" name="calc-date-in" id="calc-date-in"
+                      error-text="Выберите дату" jq-required="">
+                    <i class="fas fa-calendar-alt"></i>
+                  </span><span>&nbsp;—&nbsp;</span>
+                </div>
+                <div class="calc-second-dayout">
+                  <label for="calc-date-out">День отъезда</label>
+                  <span class="date-wrapper">
+                    <input type="date" placeholder="28.08.2021" value="2021-08-28" name="calc-date-out"
+                      id="calc-date-out" error-text="Выберите дату" jq-required="">
+                    <i class="fas fa-calendar-alt"></i>
+                  </span>
+                </div>
+                <div class="calc-second-places">
+                  <label for="calc-places-value">Количество мест</label>
+                  <div class="number-wrapper">
+                    <input type="number" min="1" max="99" placeholder="1" name="calc-places-value"
+                      id="calc-places-value" error-text="Выберите кол-во мест" jq-required="">
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn-green">Расчитать стоимость</button>
+            </form>
+            <div class="calc-answer">
+              <div class="calc-answer-first-row">Стоимость проживания с
+                <span class="answer-date-begin">16.09.2020</span> по <span class="answer-date-end">25.09.2020</span>
+                <span class="answer-date-duration">(9 суток)</span> составит:
+              </div>
+              <div class="calc-answer-row">В комнате на <span class="answer-place-number">6</span> мест - <span
+                  class="answer-room-price">3213</span> руб</div>
+              <div class="calc-answer-row">В комнате на <span class="answer-place-number">8</span> мест - <span
+                  class="answer-room-price">3213</span> руб</div>
+              <div class="calc-answer-row">В комнате на <span class="answer-place-number">10</span> мест - <span
+                  class="answer-room-price">3213</span> руб</div>
+              <div class="calc-answer-row">В комнате на <span class="answer-place-number">12</span> мест - <span
+                  class="answer-room-price">2826</span> руб</div>
+              <div class="calc-answer-last-row">Вы можете воспользоваться <a href="/">формой для получения счета на
+                  оплату</a> либо оплатить на
+                месте.</div>
+            </div>
+            <div class="calc-text">*Данный расчет не гарантирует наличие свободных мест в этих комнатах. По поводу
+              наличия свободных
+              мест - обращайтесь по телефону и уточняйте у оператора.</div>
+            <div class="calc-print"><a href="/">Распечатать ваучер</a></div>
+          </div>
           <div class="object-info-name" id="object-address">Адрес</div>
           <div class="object-address-content">г. Москва, ул.Часовая, 23/8</div>
           <div class="object-info-name" id="object-road">Как добраться</div>

@@ -29,14 +29,13 @@ $("#add-reservation-form").submit(function (e) {
     e.preventDefault();
   }
   if (!isError) {
+    e.preventDefault();
     $(this).find(".notice-text").addClass("active");
   }
 });
 
-
-
+// crm_front_object.html
 $(function () {
-
   let liCount = $('.slides li').length;
   let curIndex = 1;
   $('.slider-all-number').text(liCount);
@@ -51,9 +50,7 @@ $(function () {
   if (curIndex == liCount) {
     $('.slider-next').addClass('disabled');
   }
-
-  // $('.slider-wrapper').height($('.slides li img').height());
-  // $('.slider-wrapper').css('height', $('.slider li img').height());
+  $('.slider-wrapper').height($('.slides li img').eq(curIndex - 1).height());
 
   function move() {
     $('.slider-next').removeClass('disabled');
@@ -67,7 +64,6 @@ $(function () {
     $('.slides li').eq(curIndex - 1).addClass('active');
     $('.slider-wrapper').height($('.slides li img').eq(curIndex - 1).height());
   }
-
   function moveLeft() {
     curIndex++;
     move();
@@ -75,7 +71,6 @@ $(function () {
       $('.slider-next').addClass('disabled');
     }
   }
-
   function moveRight() {
     curIndex--;
     move();
@@ -91,3 +86,31 @@ $(function () {
     moveLeft();
   });
 });
+$("#calc-form").submit(function (e) {
+  $(this).find("[jq-required]").removeClass("empty-error");
+  $(this).find(".empty-error-text").remove();
+  let isError = false;
+  $(this).find("[jq-required]").each(function (index) {
+    if (!$(this).val()) {
+      $(this).addClass("empty-error");
+      $(this).after("<div class='empty-error-text'>" + $(this).attr("error-text") + "</div>");
+      isError = true;
+    }
+  });
+  if (isError) {
+    e.preventDefault();
+  }
+  if (!isError) {
+    e.preventDefault();
+    // $("#calc-places-value").val();
+    // $(".answer-date-begin").text($("#calc-date-in").val());
+    // $(".answer-date-end").text($("#calc-date-out").val());
+    // $(".answer-date-duration").text("("+1+"суток)");
+    // $(".calc-answer-row").each(function (index) {
+    //   $(".answer-place-number")
+    //   $(".answer-room-price")
+    // });
+    $(".calc-answer").addClass("active");
+  }
+});
+// // crm_front_object.html
