@@ -113,4 +113,8 @@ $("#calc-form").submit(function (e) {
     $(".calc-answer").addClass("active");
   }
 });
+$(".table-pricetypes-show-more").on("click", function () {
+  $(this).toggleClass("active");
+  $(this).closest(".table-pricetypes-row").find(".table-pricetypes-all").toggleClass("active");
+});
 // // crm_front_object.html
