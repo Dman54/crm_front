@@ -1,12 +1,20 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto",Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI","Source Sans Pro","Oxygen",Helvetica,"Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  background: #F3F7F9;
+  font-family: "Roboto", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Source Sans Pro", "Oxygen", Helvetica, "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  background: #f3f7f9;
 }
-input, select, textarea, button {
-  font-family: "Roboto",Roboto;
+input,
+select,
+textarea,
+button {
+  font-family: "Roboto", Roboto;
   font-size: 16px;
 }
 button {
@@ -17,6 +25,9 @@ a {
 }
 ul {
   list-style-type: none;
+}
+.d-none {
+  display: none;
 }
 .fa-bars {
   font-size: 22px;
@@ -39,7 +50,7 @@ ul {
 }
 .topmenu::after {
   display: block;
-  content: '';
+  content: "";
   background: #fff;
   height: 60px;
   position: absolute;
@@ -88,7 +99,7 @@ ul {
 }
 .topnav-first a:hover {
   font-weight: bold;
-  color: #00AEAE;
+  color: #00aeae;
 }
 .search-wrapper,
 .button-wrapper {
@@ -107,7 +118,7 @@ ul {
   font-size: 15px;
 }
 .search-wrapper input {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 5px;
   padding: 7px 22px 7px 10px;
   font-size: 14px;
@@ -117,17 +128,17 @@ ul {
   width: 100%;
 }
 .button-wrapper button {
-  background: #00AEAE;
+  background: #00aeae;
   border-radius: 5px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   padding: 8px 29px;
 }
 .button-wrapper button:hover {
-  background: #00CBCB;
+  background: #00cbcb;
 }
 .topnav-second {
   display: flex;
@@ -146,7 +157,7 @@ ul {
 }
 .topnav-second a:hover {
   font-weight: bold;
-  color: #00AEAE;
+  color: #00aeae;
 }
 .logo {
   padding-top: 16px;
@@ -156,7 +167,7 @@ ul {
 .header {
   height: 400px;
   background: url("../img/bg.jpg");
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,22 +213,22 @@ ul {
   margin-top: 29px;
   margin-bottom: 30px;
 }
-.nav-text >*:not(:last-child) {
+.nav-text > *:not(:last-child) {
   margin-right: 11px;
   position: relative;
 }
-.nav-text >*:not(:last-child)::after {
+.nav-text > *:not(:last-child)::after {
   position: absolute;
   right: -13px;
   top: 50%;
   transform: translateY(-50%);
-  content: '';
+  content: "";
   display: block;
   width: 3px;
   height: 3px;
   background: #555555;
 }
-.nav-text >*:not(:first-child) {
+.nav-text > *:not(:first-child) {
   margin-left: 11px;
 }
 .nav-text a {
@@ -229,6 +240,7 @@ ul {
 }
 .content-left {
   flex: 1;
+  width: calc(100% - 510px);
 }
 .content-left .hostel-item:not(:last-child) {
   margin-bottom: 20px;
@@ -318,7 +330,7 @@ ul {
 .hostel-buttons {
   display: flex;
 }
-.hostel-buttons >*:not(:last-child) {
+.hostel-buttons > *:not(:last-child) {
   margin-right: 20px;
 }
 .get-call,
@@ -330,7 +342,7 @@ ul {
   font-weight: bold;
   line-height: 1;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   padding: 6px 12px;
   width: 180px;
@@ -341,13 +353,13 @@ ul {
   margin-right: 10px;
 }
 .get-call {
-  background: #00AEAE;
+  background: #00aeae;
 }
 .get-calc {
-  background: #0099EF;
+  background: #0099ef;
 }
 .get-call:hover {
-  background: #00CBCB;
+  background: #00cbcb;
 }
 .content-right {
   margin-right: 30px;
@@ -358,12 +370,12 @@ ul {
 .reviews-block,
 .articles-block {
   padding: 30px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 5px;
   margin-bottom: 30px;
   position: relative;
 }
-.content-right>*:last-child {
+.content-right > *:last-child {
   margin-bottom: 0;
 }
 .reservations-name,
@@ -374,7 +386,7 @@ ul {
   line-height: 1;
   color: #555555;
   padding-bottom: 30px;
-  border-bottom: 1px solid #00AEAE;
+  border-bottom: 1px solid #00aeae;
 }
 .reviews-name,
 .articles-name {
@@ -390,15 +402,15 @@ ul {
 }
 .reservations-block input,
 .object-calc-content input {
-  background: #FFFFFF;
-  border: 1px solid #DAE4E9;
+  background: #ffffff;
+  border: 1px solid #dae4e9;
   border-radius: 3px;
   padding: 10px;
   line-height: 1;
   color: #555555;
 }
 .object-calc-content input {
-  border: 1px solid #E1F4F4;
+  border: 1px solid #e1f4f4;
 }
 .reservation-name-block,
 .reservation-place-block,
@@ -410,7 +422,7 @@ ul {
   position: relative;
 }
 .reservations-block input.empty-error {
-  border: 2px solid #FF5050;
+  border: 2px solid #ff5050;
 }
 .empty-error-text {
   position: absolute;
@@ -418,7 +430,7 @@ ul {
   bottom: 5px;
   font-size: 14px;
   line-height: 1;
-  color: #FF0000;
+  color: #ff0000;
 }
 .reservations-block input[type="text"],
 .reservations-block input[type="number"] {
@@ -426,8 +438,8 @@ ul {
   margin-bottom: 20px;
 }
 .reservations-block select {
-  background: #FFFFFF;
-  border: 1px solid #DAE4E9;
+  background: #ffffff;
+  border: 1px solid #dae4e9;
   border-radius: 3px;
   padding: 9px 10px;
   line-height: 1;
@@ -464,18 +476,18 @@ ul {
   margin-left: 2px;
 }
 .btn-green {
-  background: #00AEAE;
+  background: #00aeae;
   border-radius: 3px;
   font-weight: bold;
   line-height: 1;
   text-align: center;
   padding: 12px;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 100%;
 }
 .btn-green:hover {
-  background: #00CBCB;
+  background: #00cbcb;
 }
 .reservations-block *::-webkit-inner-spin-button,
 .reservations-block *::-webkit-outer-spin-button,
@@ -491,7 +503,7 @@ ul {
 }
 .number-wrapper:after,
 .number-wrapper:before {
-  color: #FFF;
+  color: #fff;
   background: #555555;
   border-radius: 3px;
   position: absolute;
@@ -520,7 +532,7 @@ ul {
 }
 .reviews-all a {
   text-decoration-line: underline;
-  color: #00AEAE;
+  color: #00aeae;
 }
 .reviews-all a:hover {
   font-weight: bold;
@@ -543,7 +555,7 @@ ul {
 }
 .reviews-block .review-item:not(:last-of-type) {
   padding-bottom: 20px;
-  border-bottom: 1px solid #00AEAE;
+  border-bottom: 1px solid #00aeae;
   margin-bottom: 20px;
 }
 .reviews-block .review-item:last-of-type {
@@ -569,7 +581,7 @@ ul {
 }
 .article-readmore a {
   text-decoration-line: underline;
-  color: #00AEAE;
+  color: #00aeae;
 }
 .article-readmore a:hover {
   font-weight: bold;
@@ -590,7 +602,7 @@ ul {
   padding-bottom: 8px;
   background: #000;
   font-size: 14px;
-  color: #8D8D8D;
+  color: #8d8d8d;
 }
 .flex-container {
   display: flex;
@@ -608,11 +620,11 @@ ul {
   flex: 1;
 }
 .bottommenu a {
-  color: #8D8D8D;
+  color: #8d8d8d;
 }
 .bottommenu a:hover {
   font-weight: bold;
-  color: #D1D1D1;
+  color: #d1d1d1;
 }
 .bottommenu .bottommenu-part:last-child {
   margin-right: 0;
@@ -641,8 +653,8 @@ ul {
 .socials {
   display: flex;
 }
-.socials >* {
-  background: #00AEAE;
+.socials > * {
+  background: #00aeae;
   border-radius: 3px;
   padding: 8px;
   min-width: 32px;
@@ -650,17 +662,17 @@ ul {
   margin-right: 15px;
   text-align: center;
 }
-.socials >*:last-child {
+.socials > *:last-child {
   margin-right: 0;
 }
-.socials >*:hover {
-  background: #00CBCB;
+.socials > *:hover {
+  background: #00cbcb;
 }
 .modal-popup {
   left: 50%;
   transform: translate(-50%, -50%);
   top: -100%;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 5px;
   padding: 30px;
   width: 370px;
@@ -677,7 +689,7 @@ ul {
   line-height: 1;
   color: #555555;
   padding-bottom: 30px;
-  border-bottom: 1px solid #00AEAE;
+  border-bottom: 1px solid #00aeae;
   margin-bottom: 30px;
 }
 .modal-popup label {
@@ -687,8 +699,8 @@ ul {
   display: block;
 }
 .modal-popup input {
-  background: #FFFFFF;
-  border: 1px solid #DAE4E9;
+  background: #ffffff;
+  border: 1px solid #dae4e9;
   border-radius: 3px;
   padding: 10px;
   line-height: 1;
@@ -725,7 +737,7 @@ ul {
   margin-right: 10px;
 }
 .success {
-  color: #00923A;
+  color: #00923a;
 }
 #closeicon2_added {
   position: absolute;
@@ -733,7 +745,7 @@ ul {
   right: 20px;
   top: 20px;
   cursor: pointer;
-  color: #C4C4C4;
+  color: #c4c4c4;
 }
 body.modal-open #sidebar-overlay2 {
   display: block;
@@ -783,6 +795,9 @@ body.menu-open {
     /* display: block; */
     flex-direction: column;
   }
+  .content-left {
+    width: 100%;
+  }
   .content-right {
     order: 1;
     margin-right: 0;
@@ -792,7 +807,7 @@ body.menu-open {
   .reservations-row {
     display: flex;
   }
-  .reservations-row >* {
+  .reservations-row > * {
     min-width: calc(50% - 15px);
   }
   .reservations-row .date-wrapper input {
@@ -811,7 +826,7 @@ body.menu-open {
   .reservations-row .content-row-right .date-wrapper {
     width: 100%;
   }
-  .reservations-row >*:first-child {
+  .reservations-row > *:first-child {
     margin-right: 30px;
   }
   .reviews-all {
@@ -867,7 +882,8 @@ body.menu-open {
   .topnav-first li {
     margin-right: 16px;
   }
-  .search-wrapper, .button-wrapper {
+  .search-wrapper,
+  .button-wrapper {
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -952,7 +968,7 @@ body.menu-open {
     display: block;
     padding-top: 0;
     padding-bottom: 12px;
-    border-bottom: 1px solid #00AEAE;
+    border-bottom: 1px solid #00aeae;
   }
   .topnav-second li {
     margin-right: 0;
@@ -962,7 +978,7 @@ body.menu-open {
     padding: 8px 10px;
   }
   .topnav-second li a.active {
-    background: #00AEAE;
+    background: #00aeae;
     font-weight: bold;
     border-radius: 3px;
     color: #fff;
@@ -979,7 +995,7 @@ body.menu-open {
     margin-bottom: 10px;
   }
   .search-wrapper input {
-    border: 1px solid #F2F2F2;
+    border: 1px solid #f2f2f2;
   }
   .topmenu.active {
     left: 0;
@@ -1010,7 +1026,7 @@ body.menu-open {
     width: 100%;
     justify-content: center;
   }
-  .hostel-buttons >*:not(:last-child) {
+  .hostel-buttons > *:not(:last-child) {
     margin-right: 0;
   }
 }
@@ -1019,10 +1035,10 @@ body.menu-open {
   .reservations-row {
     display: block;
   }
-  .reservations-row >*:first-child {
+  .reservations-row > *:first-child {
     margin-right: 0;
   }
-  .reservations-row >* {
+  .reservations-row > * {
     min-width: unset;
   }
 }
@@ -1113,11 +1129,15 @@ body.menu-open {
     margin-top: 20px;
     min-width: unset;
   }
-  .reservations-block, .reviews-block, .articles-block {
+  .reservations-block,
+  .reviews-block,
+  .articles-block {
     padding: 20px 10px;
     margin-bottom: 20px;
   }
-  .reservations-name, .reviews-name, .articles-name {
+  .reservations-name,
+  .reviews-name,
+  .articles-name {
     padding-bottom: 20px;
   }
   .reservations-name {

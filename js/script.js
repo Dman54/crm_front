@@ -117,4 +117,10 @@ $(".table-pricetypes-show-more").on("click", function () {
   $(this).toggleClass("active");
   $(this).closest(".table-pricetypes-row").find(".table-pricetypes-all").toggleClass("active");
 });
+$(".block-toggle").on("click", function () {
+  $(".block-toggle").removeClass("active");
+  $(".block-toggled").removeClass("active");
+  $(this).addClass("active");
+  $(".block-toggled").eq($(".block-toggle").index($(this))).addClass('active');
+});
 // // crm_front_object.html

@@ -11,6 +11,7 @@
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   <link rel="stylesheet" href="css/reset.min.css" />
+  <link rel="stylesheet" href="font/flaticon.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/styles_object.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -208,12 +209,6 @@
       </div>
       <div class="content-left">
         <div class="content-left-top">
-          <ul class="content-left-menu">
-            <li><a href="#object-description">Описание</a></li>
-            <li><a href="#object-price">Цены</a></li>
-            <li><a href="#object-address">Адрес</a></li>
-            <li><a href="#object-road">Дорога</a></li>
-          </ul>
           <div class="slider-wrapper">
             <ul class="slides">
               <li class="active"><img src="img/obj-item1.jpg" alt="Общежитие возле метро Сокол"></li>
@@ -243,206 +238,455 @@
           </div>
         </div>
         <div class="content-left-bottom">
-          <div class="object-top-info">
-            <div class="object-name">Общежитие возле метро Сокол</div>
-            <div class="object-socials">
-              <a class="social" href="/"><i class="fab fa-vk"></i></a>
-              <a class="social" href="/"><i class="fab fa-facebook-f"></i></a>
-              <a class="social" href="/"><i class="fab fa-twitter"></i></a>
-            </div>
-          </div>
-          <div class="object-info-name" id="object-description">Описание</div>
-          <div class="object-description-content">
-            <div class="object-description-text">Для тех, кто ценит время! Общежитие находится в 10 минутах ходьбы от
-              метро "Сокол" и "Аэропорт" Замоскворецкой линии.</div>
-            <ul class="object-description-ul">
-              <li>Комнаты от 6 до 12 человек</li>
-              <li>Бесплатный Wi-Fi</li>
-              <li>Кухня, душевые и туалеты расположены на этаже</li>
-              <li>Стиральная машина-автомат, холодильник, плита, микроволновая печь</li>
-              <li>Смена белья</li>
-              <li>Любая форма оплаты</li>
-              <li>Заселение в день обращения</li>
-              <li>Кафе, магазины в шаговой доступности</li>
-              <li>Выгодные условия сотрудничества для организаций</li>
-              <li>Чистота, комфорт, порядок, "сухой" закон</li>
-              <li>Круглосуточный доступ</li>
-              <li>Видеонаблюдение</li>
-              <li>Охрана</li>
-              <li>Без комиссий и залогов</li>
-            </ul>
-          </div>
-          <div class="object-info-name" id="object-price">Цены за койко-место в сутки</div>
-          <div class="object-price-content">
-            <div class="object-price-table">
-              <div class="table-names-row">
-                <!-- кол-во мест -->
-                <div class="table-name-cell">Номер</div>
-                <div class="table-name-cell">Тариф</div>
-                <div class="table-name-cell">Стоимость</div>
-                <div class="table-name-cell">Период проживания</div>
-                <div class="table-name-cell">Период действия</div>
-                <div class="table-name-cell">Количество людей</div>
-              </div>
-              <div class="table-pricetypes-row">
-                <div class="table-price-cell">4-местный КОМФОРТ</div>
-                <div class="table-price-cell"></div>
-                <div class="table-price-cell">283</div>
-                <div class="table-price-cell"></div>
-                <div class="table-price-cell"></div>
-                <div class="table-price-cell"></div>
-                <div class="table-pricetypes-show-more">
-                  <i class="fas fa-caret-down"></i>
-                  <i class="fas fa-caret-up"></i>
-                </div>
-                <div class="table-pricetypes-all">
-                  <div class="table-pricetype-row">
-                    <div class="table-price-cell">4-местный КОМФОРТ</div>
-                    <div class="table-price-cell">от 1 до 6 суток</div>
-                    <div class="table-price-cell">283</div>
-                    <div class="table-price-cell">от 1 до 6 ночей</div>
-                    <div class="table-price-cell">-</div>
-                    <div class="table-price-cell">-</div>
-                  </div>
-                  <div class="table-pricetype-row">
-                    <div class="table-price-cell">4-местный КОМФОРТ</div>
-                    <div class="table-price-cell">от 7 до 30 суток</div>
-                    <div class="table-price-cell">357</div>
-                    <div class="table-price-cell">от 7 до 30 ночей</div>
-                    <div class="table-price-cell">-</div>
-                    <div class="table-price-cell">-</div>
-                  </div>
-                  <div class="table-pricetype-row">
-                    <div class="table-price-cell">4-местный КОМФОРТ</div>
-                    <div class="table-price-cell">более 30 суток</div>
-                    <div class="table-price-cell">450</div>
-                    <div class="table-price-cell">более 30 ночей</div>
-                    <div class="table-price-cell">-</div>
-                    <div class="table-price-cell">-</div>
-                  </div>
-                </div>
-              </div>
-              <div class="table-pricetypes-row">
-                <div class="table-price-cell">4-местный СТАНДАРТ</div>
-                <div class="table-price-cell"></div>
-                <div class="table-price-cell">233</div>
-                <div class="table-price-cell"></div>
-                <div class="table-price-cell"></div>
-                <div class="table-price-cell"></div>
-                <div class="table-pricetypes-show-more">
-                  <i class="fas fa-caret-down"></i>
-                  <i class="fas fa-caret-up"></i>
-                </div>
-                <div class="table-pricetypes-all">
-                  <div class="table-pricetype-row">
-                    <div class="table-price-cell">4-местный КОМФОРТ</div>
-                    <div class="table-price-cell">от 1 до 6 суток</div>
-                    <div class="table-price-cell">233</div>
-                    <div class="table-price-cell">от 1 до 6 ночей</div>
-                    <div class="table-price-cell">-</div>
-                    <div class="table-price-cell">-</div>
-                  </div>
-                  <div class="table-pricetype-row table-pricetype-row--isPromotion">
-                    <div class="table-price-cell">4-местный КОМФОРТ</div>
-                    <div class="table-price-cell">от 7 до 30 суток</div>
-                    <div class="table-price-cell" title="Акция">357</div>
-                    <div class="table-price-cell">от 7 до 30 ночей</div>
-                    <div class="table-price-cell">с 29.08.21 по 31.12.22</div>
-                    <div class="table-price-cell">-</div>
-                  </div>
-                  <div class="table-pricetype-row">
-                    <div class="table-price-cell">4-местный КОМФОРТ</div>
-                    <div class="table-price-cell">более 30 суток</div>
-                    <div class="table-price-cell">450</div>
-                    <div class="table-price-cell">более 30 ночей</div>
-                    <div class="table-price-cell">-</div>
-                    <div class="table-price-cell">от 100</div>
-                  </div>
-                </div>
+          <ul class="content-left-menu">
+            <li class="block-toggle active">
+              <span>Описание</span>
+            </li>
+            <li class="block-toggle">
+              <span>Тарифы</span>
+            </li>
+          </ul>
+          <div class="block-toggled active">
+            <div class="object-top-info">
+              <div class="object-name">Общежитие возле метро Сокол</div>
+              <div class="object-socials">
+                <a class="social" href="/"><i class="fab fa-vk"></i></a>
+                <a class="social" href="/"><i class="fab fa-facebook-f"></i></a>
+                <a class="social" href="/"><i class="fab fa-twitter"></i></a>
               </div>
             </div>
-          </div>
-          <div class="object-calc-content">
-            <form id="calc-form" action="php/calc-form.php" method="get">
-              <div class="calc-first-row">
-                <i class="fas fa-calculator"></i>
-                <div>Для быстрого расчета стоимости проживания воспользуйтесь калькулятором:</div>
+            <div class="object-info-name">Описание</div>
+            <div class="object-description-content">
+              <div class="object-description-text">Для тех, кто ценит время! Общежитие находится в 10 минутах ходьбы от
+                метро "Сокол" и "Аэропорт" Замоскворецкой линии.</div>
+              <ul class="object-description-ul">
+                <li>Комнаты от 6 до 12 человек</li>
+                <li>Бесплатный Wi-Fi</li>
+                <li>Кухня, душевые и туалеты расположены на
+                  этаже</li>
+                <li>Стиральная машина-автомат, холодильник, плита, микроволновая печь
+                </li>
+                <li>Смена белья</li>
+                <li>Любая форма оплаты</li>
+                <li>Заселение в день обращения</li>
+                <li>Кафе, магазины в шаговой доступности</li>
+                <li>Выгодные условия сотрудничества для организаций</li>
+                <li>Чистота, комфорт, порядок, "сухой" закон</li>
+                <li>Круглосуточный доступ</li>
+                <li>Видеонаблюдение</li>
+                <li>Охрана</li>
+                <li>Без комиссий и залогов</li>
+              </ul>
+            </div>
+            <div class="object-calc-content">
+              <form id="calc-form" action="php/calc-form.php" method="get">
+                <div class="calc-first-row">
+                  <i class="fas fa-calculator"></i>
+                  <div>Для быстрого расчета стоимости проживания воспользуйтесь калькулятором:</div>
+                </div>
+                <div class="calc-second-row">
+                  <div class="calc-second-dayin">
+                    <label for="calc-date-in">День прибытия</label>
+                    <span class="date-wrapper">
+                      <input type="date" placeholder="23.08.2021" value="2021-08-23" name="calc-date-in"
+                        id="calc-date-in" error-text="Выберите дату" jq-required="">
+                      <i class="fas fa-calendar-alt"></i>
+                    </span><span>&nbsp;—&nbsp;</span>
+                  </div>
+                  <div class="calc-second-dayout">
+                    <label for="calc-date-out">День отъезда</label>
+                    <span class="date-wrapper">
+                      <input type="date" placeholder="28.08.2021" value="2021-08-28" name="calc-date-out"
+                        id="calc-date-out" error-text="Выберите дату" jq-required="">
+                      <i class="fas fa-calendar-alt"></i>
+                    </span>
+                  </div>
+                  <div class="calc-second-places">
+                    <label for="calc-places-value">Количество мест</label>
+                    <div class="number-wrapper">
+                      <input type="number" min="1" max="99" placeholder="1" name="calc-places-value"
+                        id="calc-places-value" error-text="Выберите кол-во мест" jq-required="">
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn-green">Расчитать стоимость</button>
+              </form>
+              <div class="calc-answer">
+                <div class="calc-answer-first-row">Стоимость проживания с
+                  <span class="answer-date-begin">16.09.2020</span> по <span class="answer-date-end">25.09.2020</span>
+                  <span class="answer-date-duration">(9 суток)</span> составит:
+                </div>
+                <div class="calc-answer-row">В комнате на <span class="answer-place-number">6</span> мест - <span
+                    class="answer-room-price">3213</span> руб</div>
+                <div class="calc-answer-row">В комнате на <span class="answer-place-number">8</span> мест - <span
+                    class="answer-room-price">3213</span> руб</div>
+                <div class="calc-answer-row">В комнате на <span class="answer-place-number">10</span> мест - <span
+                    class="answer-room-price">3213</span> руб</div>
+                <div class="calc-answer-row">В комнате на <span class="answer-place-number">12</span> мест - <span
+                    class="answer-room-price">2826</span> руб</div>
+                <div class="calc-answer-last-row">Вы можете воспользоваться <a href="/">формой для получения счета на
+                    оплату</a> либо оплатить на
+                  месте.</div>
               </div>
-              <div class="calc-second-row">
-                <div class="calc-second-dayin">
-                  <label for="calc-date-in">День прибытия</label>
-                  <span class="date-wrapper">
-                    <input type="date" placeholder="23.08.2021" value="2021-08-23" name="calc-date-in" id="calc-date-in"
-                      error-text="Выберите дату" jq-required="">
-                    <i class="fas fa-calendar-alt"></i>
-                  </span><span>&nbsp;—&nbsp;</span>
+              <div class="calc-text">*Данный расчет не гарантирует наличие свободных мест в этих комнатах. По поводу
+                наличия свободных
+                мест - обращайтесь по телефону и уточняйте у оператора.</div>
+              <div class="calc-print"><a href="/">Распечатать ваучер</a></div>
+            </div>
+            <div class="object-info-name">Свободные номера</div>
+            <div class="object-rooms-content">
+              <div class="object-room">
+                <div class="object-room-head">
+                  <div class="object-room-img">
+                    <img src="img/photo1.jpg" alt="4-местный КОМФОРТ">
+                  </div>
+                  <div class="object-room-header">
+                    <div class="object-room-name">4-местный КОМФОРТ</div>
+                    <div class="object-room-bed_kind">двуспальная кровать</div>
+                    <div class="object-room-facilities-wrapper">
+                      <div class="object-room-facilities">
+                        <div class="object-room-facility">10 м2</div>
+                        <div class="object-room-facility">Бесплатная парковка</div>
+                        <div class="object-room-facility">Общая ванная комната</div>
+                        <div class="object-room-facility">Собственная ванная комната</div>
+                        <div class="object-room-facility">Окно</div>
+                        <div class="object-room-facility">Красивый вид</div>
+                        <div class="object-room-facility">Для некурящих</div>
+                        <div class="object-room-facility">Двуспальная кровать</div>
+                        <div class="object-room-facility">Двуспальная кровать queen size</div>
+                        <div class="object-room-facility">Семейный номер</div>
+                        <div class="object-room-facility">Шкаф или гардероб</div>
+                        <div class="object-room-facility">Затемнённые шторы</div>
+                        <div class="object-room-facility">Бесплатная отмена до 16 октября*</div>
+                        <div class="object-room-facility">Питание не включено</div>
+                        <div class="object-room-facility">Завтрак включён</div>
+                        <div class="object-room-facility">Оплата сейчас</div>
+                        <div class="object-room-facility">Оплата на месте - Для бронирования нужна карта</div>
+                        <div class="object-room-facility">Холодильник</div>
+                        <div class="object-room-facility">Обеденный уголок</div>
+                        <div class="object-room-facility">Телевизор</div>
+                        <div class="object-room-facility">Компьютер</div>
+                        <div class="object-room-facility">Роутер Wi-Fi</div>
+                        <div class="object-room-facility">МФУ</div>
+                        <div class="object-room-facility">Фен</div>
+                        <div class="object-room-facility">Утюг</div>
+                        <div class="object-room-facility">Индивидуальные полки</div>
+                        <div class="object-room-facility">Индивидуальные розетки</div>
+                        <div class="object-room-facility">Розетка около кровати</div>
+                        <div class="object-room-facility">Стол</div>
+                        <div class="object-room-facility">Стулья</div>
+                        <div class="object-room-facility">Ящики</div>
+                        <div class="object-room-facility">Вешалки</div>
+                        <div class="object-room-facility">Стиралка</div>
+                        <div class="object-room-facility">Белье</div>
+                        <div class="object-room-facility">Гладильные принадлежности</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="calc-second-dayout">
-                  <label for="calc-date-out">День отъезда</label>
-                  <span class="date-wrapper">
-                    <input type="date" placeholder="28.08.2021" value="2021-08-28" name="calc-date-out"
-                      id="calc-date-out" error-text="Выберите дату" jq-required="">
-                    <i class="fas fa-calendar-alt"></i>
-                  </span>
+                <div class="object-room-seats">
+                  <div class="object-room-seats-block">
+                    <span class="object-room-seats-all">
+                      Всего мест: 
+                    </span>
+                    <span class="object-room-seats-all-value">
+                      4
+                    </span>
+                  </div>
+                  <div class="object-room-seats-block">
+                    <span class="object-room-seats-free">
+                      Свободных мест: 
+                    </span>
+                    <span class="object-room-seats-free-value">
+                      3
+                    </span>
+                  </div>
                 </div>
-                <div class="calc-second-places">
-                  <label for="calc-places-value">Количество мест</label>
-                  <div class="number-wrapper">
-                    <input type="number" min="1" max="99" placeholder="1" name="calc-places-value"
-                      id="calc-places-value" error-text="Выберите кол-во мест" jq-required="">
+                <div class="object-room-variants-name">
+                  Варианты обслуживания:
+                </div>
+                <div class="object-room-table-wrapper">
+                  <div class="object-room-table">
+                    <div class="object-room-table-head">
+                      <div class="object-room-table-head-cell">
+                        Особенности
+                      </div>
+                      <div class="object-room-table-head-cell">
+                        Цена
+                      </div>
+                      <div class="object-room-table-head-cell">
+                        Оформление
+                      </div>
+                    </div>
+                    <div class="object-room-table-row">
+                      <div class="object-room-table-row-cell">
+                        <div class="object-room-facility-cell">
+                          Питание не включено
+                        </div>
+                        <div class="object-room-facility-cell">
+                          Оплата сейчас
+                        </div>
+                      </div>
+                      <div class="object-room-table-row-cell">
+                        299
+                      </div>
+                      <div class="object-room-table-row-cell">
+                        <button class="object-room-reserve-button">Забронировать</button>
+                      </div>
+                    </div>
+                    <div class="object-room-table-row">
+                      <div class="object-room-table-row-cell">
+                        <div class="object-room-facility-cell">
+                          Питание включено
+                        </div>
+                        <div class="object-room-facility-cell">
+                          Оплата на месте
+                        </div>
+                      </div>
+                      <div class="object-room-table-row-cell">
+                        399
+                      </div>
+                      <div class="object-room-table-row-cell">
+                        <button class="object-room-reserve-button">Забронировать</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <button type="submit" class="btn-green">Расчитать стоимость</button>
-            </form>
-            <div class="calc-answer">
-              <div class="calc-answer-first-row">Стоимость проживания с
-                <span class="answer-date-begin">16.09.2020</span> по <span class="answer-date-end">25.09.2020</span>
-                <span class="answer-date-duration">(9 суток)</span> составит:
+              <div class="object-room">
+                <div class="object-room-head">
+                  <div class="object-room-img">
+                    <img src="img/photo2.jpg" alt="4-местный СТАНДАРТ">
+                  </div>
+                  <div class="object-room-header">
+                    <div class="object-room-name">4-местный СТАНДАРТ</div>
+                    <div class="object-room-bed_kind">односпальная кровать</div>
+                    <div class="object-room-facilities-wrapper">
+                      <div class="object-room-facilities">
+                        <div class="object-room-facility">3 м2</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="object-room-seats">
+                  <div class="object-room-seats-block">
+                    <span class="object-room-seats-all">
+                      Всего мест: 
+                    </span>
+                    <span class="object-room-seats-all-value">
+                      4
+                    </span>
+                  </div>
+                  <div class="object-room-seats-block">
+                    <span class="object-room-seats-free">
+                      Свободных мест: 
+                    </span>
+                    <span class="object-room-seats-free-value">
+                      1
+                    </span>
+                  </div>
+                </div>
+                <div class="object-room-variants-name">
+                  Варианты обслуживания:
+                </div>
+                <div class="object-room-table-wrapper">
+                  <div class="object-room-table">
+                    <div class="object-room-table-head">
+                      <div class="object-room-table-head-cell">
+                        Особенности
+                      </div>
+                      <div class="object-room-table-head-cell">
+                        Цена
+                      </div>
+                      <div class="object-room-table-head-cell">
+                        Оформление
+                      </div>
+                    </div>
+                    <div class="object-room-table-row">
+                      <div class="object-room-table-row-cell">
+                        <div class="object-room-facility-cell">
+                          Питание не включено
+                        </div>
+                        <div class="object-room-facility-cell">
+                          Оплата сейчас
+                        </div>
+                      </div>
+                      <div class="object-room-table-row-cell">
+                        259
+                      </div>
+                      <div class="object-room-table-row-cell">
+                        <button class="object-room-reserve-button">Забронировать</button>
+                      </div>
+                    </div>
+                    <div class="object-room-table-row">
+                      <div class="object-room-table-row-cell">
+                        <div class="object-room-facility-cell">
+                          Питание включено
+                        </div>
+                        <div class="object-room-facility-cell">
+                          Оплата сейчас
+                        </div>
+                      </div>
+                      <div class="object-room-table-row-cell">
+                        299
+                      </div>
+                      <div class="object-room-table-row-cell">
+                        <button class="object-room-reserve-button">Забронировать</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="calc-answer-row">В комнате на <span class="answer-place-number">6</span> мест - <span
-                  class="answer-room-price">3213</span> руб</div>
-              <div class="calc-answer-row">В комнате на <span class="answer-place-number">8</span> мест - <span
-                  class="answer-room-price">3213</span> руб</div>
-              <div class="calc-answer-row">В комнате на <span class="answer-place-number">10</span> мест - <span
-                  class="answer-room-price">3213</span> руб</div>
-              <div class="calc-answer-row">В комнате на <span class="answer-place-number">12</span> мест - <span
-                  class="answer-room-price">2826</span> руб</div>
-              <div class="calc-answer-last-row">Вы можете воспользоваться <a href="/">формой для получения счета на
-                  оплату</a> либо оплатить на
-                месте.</div>
             </div>
-            <div class="calc-text">*Данный расчет не гарантирует наличие свободных мест в этих комнатах. По поводу
-              наличия свободных
-              мест - обращайтесь по телефону и уточняйте у оператора.</div>
-            <div class="calc-print"><a href="/">Распечатать ваучер</a></div>
-          </div>
-          <div class="object-info-name" id="object-address">Адрес</div>
-          <div class="object-address-content">г. Москва, ул.Часовая, 23/8</div>
-          <div class="object-info-name" id="object-road">Как добраться</div>
-          <div class="object-road-content">Общежитие находится в 8 минутах ходьбы от метро "Сокол" и "Аэропорт"
-            Замоскворецкой линии.</div>
-          <div class="object-video-name">Дорога от метро "Сокол"</div>
-          <div class="youtube-video">
-            <iframe src="https://www.youtube.com/embed/IuC5gRFoAJ4" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen=""></iframe>
-          </div>
-          <div class="ya_map">
-            <iframe
-              src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8d3c7c5f167a411533a23fcf8ee243298ce19509649da0768b6d7f9aca1782a&amp;source=constructor"
-              frameborder="0">
-            </iframe>
-          </div>
-          <div class="info-block">За последнее время данным объектом интересовалось - 28 человек. Поспешите узнать о
-            наличии мест.</div>
-          <div class="call-block">
-            <div class="call-block-text">Звоните в любое время, Вам всегда рады!</div>
-            <div class="call-block-row">
-              <div class="call-block-phone">
-                <a href="tel:+74951881122">+7 (495) 188-11-22</a>
+            <div class="icons-pack">
+              <i class="fas fa-people-arrows"></i>
+              <i class="fas fa-wifi"></i>
+              <i class="fas fa-shower"></i>
+              <i class="fas fa-toilet"></i>
+              <i class="fas fa-utensils"></i>
+              <i class="fas fa-bath"></i>
+
+              <i class="flaticon flaticon-fridge"></i>
+              <i class="flaticon flaticon-free-wifi"></i>
+              <i class="flaticon flaticon-wifi"></i>
+              <i class="flaticon flaticon-kitchen"></i>
+              <i class="flaticon flaticon-microwave"></i>
+              <i class="flaticon flaticon-shower"></i>
+              <i class="flaticon flaticon-bathroom"></i>
+              <i class="flaticon flaticon-toilet"></i>
+              <i class="flaticon flaticon-washing-machine"></i>
+              <i class="flaticon flaticon-stove"></i>
+              <i class="flaticon flaticon-clean-linen-basket"></i>
+              <i class="flaticon flaticon-cctv"></i>
+              <i class="flaticon flaticon-security"></i>
+              <i class="flaticon flaticon-gift"></i>
+              <i class="flaticon flaticon-24-hours"></i>
+              <i class="flaticon flaticon-toilet-1"></i>
+              <i class="flaticon flaticon-comfortable"></i>
+            </div>
+
+            <div class="d-none">Icons made by <a href="https://www.flaticon.local/authors/freepik"
+                title="Freepik">Freepik</a> from <a href="https://www.flaticon.local/"
+                title="Flaticon">www.flaticon.local</a></div>
+            <div class="object-info-name">Адрес</div>
+            <div class="object-address-content">г. Москва, ул.Часовая, 23/8</div>
+            <div class="object-info-name">Как добраться</div>
+            <div class="object-road-content">Общежитие находится в 8 минутах ходьбы от метро "Сокол" и "Аэропорт"
+              Замоскворецкой линии.</div>
+            <div class="object-video-name">Дорога от метро "Сокол"</div>
+            <div class="youtube-video">
+              <iframe src="https://www.youtube.com/embed/IuC5gRFoAJ4" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""></iframe>
+            </div>
+            <div class="ya_map">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8d3c7c5f167a411533a23fcf8ee243298ce19509649da0768b6d7f9aca1782a&amp;source=constructor"
+                frameborder="0">
+              </iframe>
+            </div>
+            <div class="info-block">За последнее время данным объектом интересовалось - 28 человек. Поспешите узнать о
+              наличии мест.</div>
+            <div class="call-block">
+              <div class="call-block-text">Звоните в любое время, Вам всегда рады!</div>
+              <div class="call-block-row">
+                <div class="call-block-phone">
+                  <a href="tel:+74951881122">+7 (495) 188-11-22</a>
+                </div>
+                <div class="call-block-info">*Для лиц старше 16 лет</div>
               </div>
-              <div class="call-block-info">*Для лиц старше 16 лет</div>
+            </div>
+          </div>
+          <div class="block-toggled">
+            <div class="object-info-name">Цены за койко-место в сутки</div>
+            <div class="object-price-content">
+              <div class="object-price-table">
+                <div class="table-names-row">
+                  <!-- кол-во мест -->
+                  <div class="table-name-cell">Номер</div>
+                  <div class="table-name-cell">Тариф</div>
+                  <div class="table-name-cell">Стоимость</div>
+                  <div class="table-name-cell">Период проживания</div>
+                  <div class="table-name-cell">Период действия</div>
+                  <div class="table-name-cell">Количество людей</div>
+                </div>
+                <div class="table-pricetypes-row">
+                  <div class="table-price-cell">4-местный КОМФОРТ</div>
+                  <div class="table-price-cell"></div>
+                  <div class="table-price-cell">283</div>
+                  <div class="table-price-cell"></div>
+                  <div class="table-price-cell"></div>
+                  <div class="table-price-cell"></div>
+                  <div class="table-pricetypes-show-more active">
+                    <i class="fas fa-caret-down"></i>
+                    <i class="fas fa-caret-up"></i>
+                  </div>
+                  <div class="table-pricetypes-all active">
+                    <div class="table-pricetype-row">
+                      <div class="table-price-cell">4-местный КОМФОРТ</div>
+                      <div class="table-price-cell">от 1 до 6 суток</div>
+                      <div class="table-price-cell">283</div>
+                      <div class="table-price-cell">от 1 до 6 ночей</div>
+                      <div class="table-price-cell">-</div>
+                      <div class="table-price-cell">-</div>
+                    </div>
+                    <div class="table-pricetype-row">
+                      <div class="table-price-cell">4-местный КОМФОРТ</div>
+                      <div class="table-price-cell">от 7 до 30 суток</div>
+                      <div class="table-price-cell">357</div>
+                      <div class="table-price-cell">от 7 до 30 ночей</div>
+                      <div class="table-price-cell">-</div>
+                      <div class="table-price-cell">-</div>
+                    </div>
+                    <div class="table-pricetype-row">
+                      <div class="table-price-cell">4-местный КОМФОРТ</div>
+                      <div class="table-price-cell">более 30 суток</div>
+                      <div class="table-price-cell">450</div>
+                      <div class="table-price-cell">более 30 ночей</div>
+                      <div class="table-price-cell">-</div>
+                      <div class="table-price-cell">-</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-pricetypes-row">
+                  <div class="table-price-cell">4-местный СТАНДАРТ</div>
+                  <div class="table-price-cell"></div>
+                  <div class="table-price-cell">233</div>
+                  <div class="table-price-cell"></div>
+                  <div class="table-price-cell"></div>
+                  <div class="table-price-cell"></div>
+                  <div class="table-pricetypes-show-more active">
+                    <i class="fas fa-caret-down"></i>
+                    <i class="fas fa-caret-up"></i>
+                  </div>
+                  <div class="table-pricetypes-all active">
+                    <div class="table-pricetype-row">
+                      <div class="table-price-cell">4-местный КОМФОРТ</div>
+                      <div class="table-price-cell">от 1 до 6 суток</div>
+                      <div class="table-price-cell">233</div>
+                      <div class="table-price-cell">от 1 до 6 ночей</div>
+                      <div class="table-price-cell">-</div>
+                      <div class="table-price-cell">-</div>
+                    </div>
+                    <div class="table-pricetype-row table-pricetype-row--isPromotion">
+                      <div class="table-price-cell">4-местный КОМФОРТ</div>
+                      <div class="table-price-cell">от 7 до 30 суток</div>
+                      <div class="table-price-cell" title="Акция">357</div>
+                      <div class="table-price-cell">от 7 до 30 ночей</div>
+                      <div class="table-price-cell">с 29.08.21 по 31.12.22</div>
+                      <div class="table-price-cell">-</div>
+                    </div>
+                    <div class="table-pricetype-row">
+                      <div class="table-price-cell">4-местный КОМФОРТ</div>
+                      <div class="table-price-cell">более 30 суток</div>
+                      <div class="table-price-cell">450</div>
+                      <div class="table-price-cell">более 30 ночей</div>
+                      <div class="table-price-cell">-</div>
+                      <div class="table-price-cell">от 100</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
