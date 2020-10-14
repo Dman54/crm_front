@@ -455,13 +455,19 @@
   text-decoration-line: underline;
   color: #00aeae;
 }
-
+.object-room {
+  display: flex;
+  position: relative;
+}
+.object-room-left {
+  margin-right: 20px;
+  width: 540px;
+}
 .object-room:not(:first-child) {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .object-room-head {
   display: flex;
-  overflow: hidden;
 }
 .object-room-img {
   margin-right: 16px;
@@ -477,28 +483,65 @@
   line-height: 24px;
   margin-bottom: 2px;
 }
+.show_more_facilities {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  line-height: 22px;
+  height: 22px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(133, 135, 139, 0.3);
+  border-radius: 5px;
+  display: none;
+}
+.show_more_facilities.active {
+  display: block;
+}
+.show_more_facilities .showed {
+  display: none;
+}
+.show_more_facilities.showing .showed {
+  display: block;
+}
+.show_more_facilities.showing .showed-no {
+  display: none;
+}
+.object-room-facilities-wrapper {
+  width: calc(100% - 540px);
+  position: relative;
+  overflow: hidden;
+}
+.object-room-facilities-wrapper.active {
+  overflow: unset;
+}
 .object-room-facilities {
   display: flex;
-  margin-top: 8px;
   position: relative;
-  width: calc(100vw - 766px);
-  overflow-x: auto;
+  /* width: calc(100vw - 766px); */
+  flex-wrap: wrap;
+
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+}
+.object-room-facilities.active {
+  z-index: 1;
 }
 .object-room-facility {
-  flex-shrink: 0;
-  padding: 6px;
+  /* flex-shrink: 0; */
+  padding: 4px 3px;
   border-radius: 3px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   border: 1px solid rgba(133, 135, 139, 0.3);
   display: flex;
   align-items: center;
-}
-.object-room-facility i {
-  font-size: 24px;
   margin-right: 4px;
-}
-.object-room-facility:not(:last-child) {
-  margin-right: 4px;
+  margin-bottom: 4px;
 }
 .object-room-seats {
   margin-top: 10px;
@@ -524,7 +567,7 @@
   border: 1px solid rgba(133, 135, 139, 0.3);
   border-radius: 5px;
   padding: 6px;
-  width: 518px;
+  width: 520px;
 }
 .object-room-table-head,
 .object-room-table-row {
@@ -541,11 +584,12 @@
 .object-room-table-row-cell:first-child {
   width: 252px;
 }
-.object-room-table-head-cell:nth-child(2),
 .object-room-table-row-cell:nth-child(2) {
   width: 82px;
 }
-.object-room-table-head-cell:nth-child(3),
+.object-room-table-head-cell:nth-child(2) {
+  width: 254px;
+}
 .object-room-table-row-cell:nth-child(3) {
   width: 172px;
 }
@@ -575,18 +619,16 @@
   background-color: #044fd2;
 }
 
+.object-room-facility i {
+  font-size: 29px;
+  margin-right: 4px;
+}
 [class^="flaticon-"]:before,
 [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after,
 [class*=" flaticon-"]:after {
-  font-size: 32px;
+  font-size: 26px;
   margin-left: 0;
-}
-.icons-pack i {
-  font-size: 24px;
-}
-.icons-pack i.flaticon {
-  /* font-size: 32px!important; */
 }
 
 .youtube-video {
@@ -611,6 +653,27 @@
   color: #555555;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 1600px) {
+  .object-room-table {
+    width: 348px;
+  }
+  .object-room-left {
+    width: 368px;
+  }
+  .object-room-table-row {
+    flex-wrap: wrap;
+  }
+  .object-room-table-head-cell:nth-child(2) {
+    width: 82px;
+  }
+  .object-room-table-row-cell:nth-child(3) {
+    width: 252px;
+  }
+  .object-room-facilities-wrapper {
+    width: calc(100% - 368px);
+  }
 }
 
 @media (max-width: 1200px) {
@@ -655,9 +718,6 @@
   .ya_map iframe {
     height: calc((100vw - 180px) / 2);
   }
-  .object-room-facilities {
-    width: calc(100vw - 366px);
-  }
 }
 
 @media (max-width: 930px) {
@@ -665,23 +725,20 @@
   .ya_map iframe {
     height: calc((100vw - 124px) / 2);
   }
-  .object-room-facilities {
-    width: calc(100vw - 316px);
-  }
 }
 
-@media (max-width: 700px) {
-  .object-room-head {
-    position: relative;
-    padding-bottom: 40px;
+@media (max-width: 800px) {
+  .object-room {
+    display: block;
+  }
+  .object-room-left {
+    width: 100%;
+    margin-right: 0;
   }
   .object-room-facilities-wrapper {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-  }
-  .object-room-facilities {
-    width: calc(100vw - 120px);
+    width: 100%;
+    margin-top: 20px;
+    height: 30px;
   }
 }
 
@@ -816,5 +873,12 @@
   }
   .object-menu-block .object-menu-item:nth-child(2) {
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .object-room-table {
+    padding: 0;
+    width: 336px;
   }
 }

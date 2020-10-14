@@ -35,7 +35,42 @@ $("#add-reservation-form").submit(function (e) {
 });
 
 // crm_front_object.html
-$(function () {
+// $(function () {
+$(window).on("load", function () {
+  $(".object-room").each(function() {
+    let rightHeight = $(this).find(".object-room-facilities").height();
+    if ($(window).width() > 800) {
+      let leftHeight = $(this).find(".object-room-left").height();
+      if (rightHeight > leftHeight) {
+        $(this).find(".object-room-facilities").height(leftHeight - 24);
+        $(this).find(".show_more_facilities").addClass("active");
+        $(this).find(".object-room-facilities").addClass("active");
+      }
+    } else {
+      if (rightHeight > 140) {
+        $(this).find(".show_more_facilities").addClass("active");
+        $(this).find(".object-room-facilities").addClass("active");
+        $(this).find(".object-room-facilities-wrapper").height(162);
+      } else {
+        $(this).find(".object-room-facilities-wrapper").height($(this).find(".object-room-facilities").height());
+      }
+    }
+  });
+  $(".show_more_facilities").on("click", function() {
+    if ($(this).hasClass("showing")) {
+      $(this).parent().removeClass("active");
+      $(this).prev().height($(this).parent().height() - 24);
+      $(this).removeClass("showing");
+      $(this).css('top','unset');
+    } else {
+      $(this).parent().addClass("active");
+      $(this).prev().height('auto');
+      $(this).addClass("showing");
+      $(this).css('top',($(this).prev().height()));
+    }
+  });
+
+  // slider
   let liCount = $('.slides li').length;
   let curIndex = 1;
   $('.slider-all-number').text(liCount);
