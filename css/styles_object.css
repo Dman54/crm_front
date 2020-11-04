@@ -71,7 +71,8 @@
   padding: 14px;
 }
 .block-toggle.active {
-  font-weight: bold;
+  color: #00aeae;
+  text-decoration: underline;
 }
 .block-toggled {
   display: none;
@@ -92,6 +93,10 @@
   padding: 12px 15px;
   color: #555555;
   cursor: pointer;
+}
+.content-left-menu .active a,
+.content-left-menu .active span {
+  color: #00aeae;
 }
 .content-left-menu a:first-child,
 .content-left-menu span:first-child {
