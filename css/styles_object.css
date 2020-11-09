@@ -65,7 +65,8 @@
 }
 .object-menu-item:hover {
   background: #ffa149;
-  font-weight: bold;
+  /* font-weight: bold; */
+  text-shadow: 0 0 2px #fff;
   color: #fff;
   border: none;
   padding: 14px;
