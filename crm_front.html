@@ -92,11 +92,11 @@
               <div class="reservation-name-block">
                 <label for="reservation-name">ФИО</label>
                 <input type="text" class="reservation-name" placeholder="Иванов Иван Иванович" name="reservation-name"
-                  id="reservation-name" error-text="Введите ваше ФИО" jq-required>
+                  id="reservation-name" data-error-text="Введите ваше ФИО" data-jq-required>
               </div>
               <div class="reservation-place-block">
                 <label for="reservation-place">Общежитие</label>
-                <select type="text" class="reservation-place" name="reservation-place" id="reservation-place">
+                <select class="reservation-place" name="reservation-place" id="reservation-place">
                   <option selected="" value="Выставочная">Выставочная</option>
                   <option value="Выставочная2">Выставочная2</option>
                 </select>
@@ -107,16 +107,16 @@
                 <div class="content-row-left">
                   <label for="reservation-date-in">День прибытия</label>
                   <span class="date-wrapper">
-                    <input type="date" placeholder="23.08.2021" value="2021-08-23" name="reservation-date-in"
-                      id="reservation-date-in" error-text="Выберите дату" jq-required>
+                    <input type="date" value="2021-08-23" name="reservation-date-in" id="reservation-date-in"
+                      data-error-text="Выберите дату" data-jq-required>
                     <i class="fas fa-calendar-alt"></i>
                   </span><span>&nbsp;—&nbsp;</span>
                 </div>
                 <div class="content-row-right">
                   <label for="reservation-date-out">День отъезда</label>
                   <span class="date-wrapper">
-                    <input type="date" placeholder="28.08.2021" value="2021-08-28" name="reservation-date-out"
-                      id="reservation-date-out" error-text="Выберите дату" jq-required>
+                    <input type="date" value="2021-08-28" name="reservation-date-out" id="reservation-date-out"
+                      data-error-text="Выберите дату" data-jq-required>
                     <i class="fas fa-calendar-alt"></i>
                   </span>
                 </div>
@@ -125,7 +125,7 @@
                 <label for="reservation-places-value">Количество мест</label>
                 <div class="number-wrapper">
                   <input type="number" min="1" max="99" placeholder="1" name="reservation-places-value"
-                    id="reservation-places-value" error-text="Выберите кол-во мест" jq-required>
+                    id="reservation-places-value" data-error-text="Выберите кол-во мест" data-jq-required>
                 </div>
               </div>
             </div>
@@ -133,12 +133,12 @@
               <div class="reservation-phone-block">
                 <label for="reservation-phone-value">Номер телефона</label>
                 <input type="text" class="reservation-phone-value" placeholder="" name="reservation-phone-value"
-                  id="reservation-phone-value" error-text="Ведите номер телефона" jq-required>
+                  id="reservation-phone-value" data-error-text="Ведите номер телефона" data-jq-required>
               </div>
               <div class="reservation-email-block">
                 <label for="reservation-email-value">Электронная почта</label>
                 <input type="text" class="reservation-email-value" placeholder="" name="reservation-email-value"
-                  id="reservation-email-value" error-text="Некоретный адрес" jq-required>
+                  id="reservation-email-value" data-error-text="Некоретный адрес" data-jq-required>
               </div>
             </div>
             <button type="submit" class="btn-green">Забронировать</button>

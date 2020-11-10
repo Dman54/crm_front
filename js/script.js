@@ -15,17 +15,17 @@ $("#closeicon2_added, #sidebar-overlay2").on("click", function () {
   $("body").removeClass("modal-open");
 });
 $("#add-reservation-form").submit(function (e) {
-  $(this).find("[jq-required]").removeClass("empty-error");
+  $(this).find("[data-jq-required]").removeClass("empty-error");
   $(this).find(".empty-error-text").remove();
   let isError = false;
   $(this)
-    .find("[jq-required]")
+    .find("[data-jq-required]")
     .each(function (index) {
       if (!$(this).val()) {
         $(this).addClass("empty-error");
         $(this).after(
           "<div class='empty-error-text'>" +
-            $(this).attr("error-text") +
+            $(this).attr("data-error-text") +
             "</div>"
         );
         isError = true;
@@ -137,17 +137,17 @@ $(window).on("load", function () {
   });
 });
 $("#calc-form").submit(function (e) {
-  $(this).find("[jq-required]").removeClass("empty-error");
+  $(this).find("[data-jq-required]").removeClass("empty-error");
   $(this).find(".empty-error-text").remove();
   let isError = false;
   $(this)
-    .find("[jq-required]")
+    .find("[data-jq-required]")
     .each(function (index) {
       if (!$(this).val()) {
         $(this).addClass("empty-error");
         $(this).after(
           "<div class='empty-error-text'>" +
-            $(this).attr("error-text") +
+            $(this).attr("data-error-text") +
             "</div>"
         );
         isError = true;
