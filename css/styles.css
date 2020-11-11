@@ -9,6 +9,9 @@ body {
     "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol";
   background: #f3f7f9;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 input,
 select,
@@ -26,8 +29,22 @@ a {
 ul {
   list-style-type: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 .d-none {
   display: none;
+}
+.d-flex {
+  display: flex;
 }
 .fa-bars {
   font-size: 22px;
@@ -166,9 +183,24 @@ ul {
   padding-bottom: 16px;
   min-width: calc(100% - 593px);
 }
+.nav-buttons {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.nav-buttons li {
+  margin-bottom: 20px;
+}
+.nav-buttons li:not(:last-child) {
+  margin-right: 20px;
+}
+.nav-buttons a {
+  display: block;
+}
 .header {
   height: 400px;
-  background: url("../img/bg.jpg");
+  background-color: #000;
+  background-image: url("../img/bg.jpg");
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -199,9 +231,9 @@ ul {
   color: #555555;
   cursor: pointer;
 }
-.nav-tabs .nav-tab:first-child {
+/* .nav-tabs .nav-tab:first-child {
   padding-left: 0;
-}
+} */
 .nav-tab.active {
   /* font-weight: bold; */
   text-shadow: 0 0 1px #555555;
@@ -594,6 +626,7 @@ ul {
 .footer {
   padding-top: 30px;
   background: #353535;
+  margin-top: auto;
 }
 .logo-bottom {
   margin-right: 60px;
