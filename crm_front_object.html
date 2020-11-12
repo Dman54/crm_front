@@ -137,12 +137,28 @@
         </div>
       </div>
       <div class="content-right">
-        <div class="object-menu-block">
-          <a href="/" class="object-menu-item">Обратная связь</a>
-          <a href="/" class="object-menu-item">Сотрудничество</a>
-          <a href="/" class="object-menu-item">Полезная информация</a>
-          <a href="/" class="object-menu-item">Вакансии</a>
-        </div>
+        <ul class="object-menu-block">
+          <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <a href="/" itemprop="url">
+              <span itemprop="name">Обратная связь</span>
+            </a>
+          </li>
+          <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <a href="/" itemprop="url">
+              <span itemprop="name">Сотрудничество</span>
+            </a>
+          </li>
+          <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <a href="/" itemprop="url">
+              <span itemprop="name">Полезная информация</span>
+            </a>
+          </li>
+          <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <a href="/" itemprop="url">
+              <span itemprop="name">Вакансии</span>
+            </a>
+          </li>
+        </ul>
         <div class="reservations-block">
           <form id="add-reservation-form" action="php/add-reservation.php" method="post">
             <div class="reservations-name">
@@ -230,8 +246,10 @@
             <div class="review-place">Общежитие возле метро Сокол</div>
             <div class="review-text">Я приезжаю работать в Москву не первый год. И вот снова я в Москве! Хочу
               поделиться: общежитие по улице
-              Часовая – это хорошее место кому надо пожить с комфортном за недорого. Для рабочих этот вариант – то, что
-              нужно! По отзыву друга открыл сайт hostel.ms, связался по телефону, сделали мне бронь вообще без проблем.
+              Часовая – это хорошее место кому надо пожить с комфортном за недорого. Для рабочих этот вариант – то,
+              что
+              нужно! По отзыву друга открыл сайт hostel.ms, связался по телефону, сделали мне бронь вообще без
+              проблем.
               Оплата при заселении. Встречают приветливо, кровать для сна удобная, принадлежности прилагаются, все для
               хозяйства в наличии. Зачем снимать квартиру, когда есть такие удобные общежития.</div>
           </div>
@@ -241,18 +259,17 @@
           <div class="articles-name">
             Статьи
           </div>
-          <div class="article-item">
-            <div class="article-name">Виды московских общежитий</div>
-            <div class="article-text">Жилье в общежитиях гостиничного типа как для физических лиц, так и для предприятий
-              в ЦАО, САО, СЗАО, ЮЗАО Москвы, а также в Домодедово.</div>
-            <div class="article-readmore"><a href="/">Читать полностью</a></div>
+          <div class="article-item" itemscope itemtype="https://schema.org/BlogPosting">
+            <div class="article-name" itemprop="name headline">Виды московских общежитий</div>
+            <div class="article-text">Жилье в общежитиях гостиничного типа как для физических лиц, так и для
+              предприятий в ЦАО, САО, СЗАО, ЮЗАО Москвы, а также в Домодедово.</div>
+            <a href="/" class="article-readmore" itemprop="isPartOf url">Читать полностью</a>
           </div>
-          <div class="article-item">
-            <div class="article-name">Общежития гостиничного типа</div>
-            <div class="article-text">В таких общежитиях есть все необходимое для удобного проживания: кухня, душевые и
-              туалеты, стиральная машина,
-              телевизор, холодильник, микроволновая печь</div>
-            <div class="article-readmore"><a href="/">Читать полностью</a></div>
+          <div class="article-item" itemscope itemtype="https://schema.org/BlogPosting">
+            <div class="article-name" itemprop="name headline">Общежития гостиничного типа</div>
+            <div class="article-text">В таких общежитиях есть все необходимое для удобного проживания: кухня, душевые
+              и туалеты, стиральная машина, телевизор, холодильник, микроволновая печь</div>
+            <a href="/" class="article-readmore" itemprop="isPartOf url">Читать полностью</a>
           </div>
         </div>
       </div>

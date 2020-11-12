@@ -613,15 +613,13 @@ ol {
   margin-bottom: 20px;
 }
 .article-readmore {
+  display: block;
   text-align: right;
   line-height: 1;
-}
-.article-readmore a {
   text-decoration-line: underline;
   color: #00aeae;
 }
-.article-readmore a:hover {
-  /* font-weight: bold; */
+.article-readmore:hover {
   text-shadow: 0 0 1px #00aeae;
 }
 .footer {
