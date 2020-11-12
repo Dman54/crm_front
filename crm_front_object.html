@@ -303,12 +303,12 @@
         <div class="content-left-top">
           <div class="slider-wrapper">
             <ul class="slides">
-              <li class="active"><img src="img/obj-item1.jpg" alt="Хостел возле метро Сокол"></li>
-              <li><img src="img/obj-item2.jpg" alt="Хостел возле метро Сокол"></li>
-              <li><img src="img/obj-item3.jpg" alt="Хостел возле метро Сокол"></li>
-              <li><img src="img/obj-item4.jpg" alt="Хостел возле метро Сокол"></li>
-              <li><img src="img/obj-item5.jpg" alt="Хостел возле метро Сокол"></li>
-              <li><img src="img/obj-item6.jpg" alt="Хостел возле метро Сокол"></li>
+              <li class="active"><img itemprop="image" src="img/obj-item1.jpg" alt="Хостел возле метро Сокол"></li>
+              <li><img itemprop="image" src="img/obj-item2.jpg" alt="Хостел возле метро Сокол"></li>
+              <li><img itemprop="image" src="img/obj-item3.jpg" alt="Хостел возле метро Сокол"></li>
+              <li><img itemprop="image" src="img/obj-item4.jpg" alt="Хостел возле метро Сокол"></li>
+              <li><img itemprop="image" src="img/obj-item5.jpg" alt="Хостел возле метро Сокол"></li>
+              <li><img itemprop="image" src="img/obj-item6.jpg" alt="Хостел возле метро Сокол"></li>
             </ul>
           </div>
           <div class="slider-ui">
@@ -340,7 +340,7 @@
           </ul>
           <div class="block-toggled active">
             <div class="object-top-info">
-              <div class="object-name">Хостел возле метро Сокол</div>
+              <div class="object-name" itemprop="name">Хостел возле метро Сокол</div>
               <ul class="object-socials">
                 <li itemscope itemtype="http://schema.org/SiteNavigationElement">
                   <a class="social" href="/vk" itemprop="url">
@@ -363,7 +363,7 @@
               </ul>
             </div>
             <div class="object-info-name">Описание</div>
-            <div class="object-description-content">
+            <div class="object-description-content" itemprop="description">
               <div class="object-description-text">Для тех, кто ценит время! Хостел находится в 10 минутах ходьбы от
                 метро "Сокол" и "Аэропорт" Замоскворецкой линии.</div>
               <ul class="object-description-ul">
@@ -739,7 +739,13 @@
                 rel="noopener noreferrer" href="https://www.flaticon.local/" title="Flaticon">www.flaticon.local</a>
             </div>
             <div class="object-info-name">Адрес</div>
-            <div class="object-address-content">г. Москва, ул.Часовая, 23/8</div>
+            <div class="object-address-content" itemprop="address" itemscope
+              itemtype="https://schema.org/PostalAddress">
+              г. <span itemprop="addressLocality">Москва</span>, <span itemprop="streetAddress">ул.Часовая, 23/8</span>
+              <!-- <meta itemprop="postalCode" content="6020"> -->
+              <!-- <meta itemprop="addressRegion" content="Московская область"> -->
+              <!-- <meta itemprop="addressCountry" content="Россия"> -->
+            </div>
             <div class="object-info-name">Как добраться</div>
             <div class="object-road-content">Хостел находится в 8 минутах ходьбы от метро "Сокол" и "Аэропорт"
               Замоскворецкой линии.</div>
@@ -760,7 +766,7 @@
               <div class="call-block-text">Звоните в любое время, Вам всегда рады!</div>
               <div class="call-block-row">
                 <div class="call-block-phone">
-                  <a href="tel:+74951881122"><span>+7 (495) 188-11-22</span></a>
+                  <a href="tel:+74951881122"><span itemprop="telephone">+7 (495) 188-11-22</span></a>
                 </div>
                 <div class="call-block-info">*Для лиц старше 16 лет</div>
               </div>
