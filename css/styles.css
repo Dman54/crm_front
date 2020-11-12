@@ -693,7 +693,8 @@ ol {
 .socials {
   display: flex;
 }
-.socials > * {
+.socials a {
+  display: block;
   background: #00aeae;
   border-radius: 3px;
   padding: 8px;
@@ -702,10 +703,10 @@ ol {
   margin-right: 15px;
   text-align: center;
 }
-.socials > *:last-child {
+.socials li:last-child a {
   margin-right: 0;
 }
-.socials > *:hover {
+.socials a:hover {
   background: #00cbcb;
 }
 .modal-popup {

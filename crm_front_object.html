@@ -43,8 +43,8 @@
   <div class="topmenu-small">
     <div class="container">
       <i class="fas fa-bars"></i>
-      <div class="logo">
-        <a href="/"><img itemprop="image" src="img/logo.svg" alt="RentCode"></a>
+      <div class="logo" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+        <a href="/" itemprop="url"><img itemprop="image" src="img/logo.svg" alt="RentCode"></a>
       </div>
       <div class="button-wrapper">
         <button class="log-button">Вход</button>
@@ -67,7 +67,8 @@
           </a>
         </li>
         <li class="phone">
-          <a href="tel:+74951881122"><i class="fas fa-mobile-alt"></i>+7 (495) 188-11-22</a>
+          <a href="tel:+74951881122"><i class="fas fa-mobile-alt"></i><span itemprop="telephone">+7 (495)
+              188-11-22</span></a>
         </li>
       </ul>
       <div class="search-wrapper">
@@ -77,17 +78,36 @@
       <div class="button-wrapper">
         <button class="log-button">Вход</button>
       </div>
-      <div class="logo">
-        <a href="/"><img src="img/logo.svg" alt="RentCode"></a>
+      <div class="logo" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+        <a href="/" itemprop="url"><img itemprop="image" src="img/logo.svg" alt="RentCode"></a>
       </div>
       <i class="fas fa-bars"></i>
-      <ul class="topnav-second">
-        <li><a href="/">Законы</a></li>
-        <li><a class="active" href="/">Организациям</a></li>
-        <li><a href="/">Частным лицам</a></li>
-        <li><a href="/">Карта</a></li>
-        <li><a href="/">Оплата</a></li>
-        <li><a href="/">Блог</a></li>
+      <ul class="topnav-second" itemscope
+        itemtype="http://schema.org/SiteNavigationElement https://schema.org/ItemList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/"><span itemprop="name">Законы</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" class="active" href="/"><span itemprop="name">Организациям</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/"><span itemprop="name">Частным лицам</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/"><span itemprop="name">Карта</span></a>
+          <meta itemprop="position" content="4" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/"><span itemprop="name">Оплата</span></a>
+          <meta itemprop="position" content="5" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/"><span itemprop="name">Блог</span></a>
+          <meta itemprop="position" content="6" />
+        </li>
       </ul>
     </nav>
   </div>
@@ -112,7 +132,7 @@
         <div class="call-block-text">Звоните в любое время, Вам всегда рады!</div>
         <div class="call-block-row">
           <div class="call-block-phone">
-            <a href="tel:+74951881122">+7 (495) 188-11-22</a>
+            <a href="tel:+74951881122"><span itemprop="telephone">+7 (495) 188-11-22</span></a>
           </div>
           <div class="call-block-info">*Для лиц старше 16 лет</div>
         </div>
@@ -279,11 +299,28 @@
           <div class="block-toggled active">
             <div class="object-top-info">
               <div class="object-name">Хостел возле метро Сокол</div>
-              <div class="object-socials">
-                <a class="social" href="/"><i class="fab fa-vk"></i></a>
-                <a class="social" href="/"><i class="fab fa-facebook-f"></i></a>
-                <a class="social" href="/"><i class="fab fa-twitter"></i></a>
-              </div>
+              <ul class="object-socials" itemscope
+                itemtype="http://schema.org/SiteNavigationElement https://schema.org/ItemList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="social" href="/" itemprop="item">
+                    <i class="fab fa-vk"></i>
+                    <span class="visually-hidden" itemprop="name">Вконтакте</span>
+                    <meta itemprop="position" content="1" />
+                  </a>
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="social" href="/" itemprop="item">
+                    <i class="fab fa-facebook-f"></i></a>
+                  <span class="visually-hidden" itemprop="name">Facebook</span>
+                  <meta itemprop="position" content="2" />
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a class="social" href="/" itemprop="item">
+                    <i class="fab fa-twitter"></i></a>
+                  <span class="visually-hidden" itemprop="name">Twitter</span>
+                  <meta itemprop="position" content="3" />
+                </li>
+              </ul>
             </div>
             <div class="object-info-name">Описание</div>
             <div class="object-description-content">
@@ -683,7 +720,7 @@
               <div class="call-block-text">Звоните в любое время, Вам всегда рады!</div>
               <div class="call-block-row">
                 <div class="call-block-phone">
-                  <a href="tel:+74951881122">+7 (495) 188-11-22</a>
+                  <a href="tel:+74951881122"><span itemprop="telephone">+7 (495) 188-11-22</span></a>
                 </div>
                 <div class="call-block-info">*Для лиц старше 16 лет</div>
               </div>
@@ -788,49 +825,112 @@
   <footer class="footer">
     <div class="container flex-container">
       <div class="footer-left">
-        <div class="logo-bottom">
-          <a href="/"><img src="img/logo_white.svg" alt="RentCode"></a>
+        <div class="logo-bottom" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+          <a href="/" itemprop="url"><img itemprop="image" src="img/logo_white.svg" alt="RentCode"></a>
         </div>
         <ul class="bottommenu">
           <li class="bottommenu-part">
-            <ul>
-              <li><a href="/">Общежития</a></li>
-              <li><a href="/">Хостелы</a></li>
+            <ul itemscope itemtype="http://schema.org/SiteNavigationElement https://schema.org/ItemList">
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" itemprop="item"><span itemprop="name">Общежития</span></a>
+                <meta itemprop="position" content="1" />
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" itemprop="item"><span itemprop="name">Хостелы</span></a>
+                <meta itemprop="position" content="2" />
+              </li>
             </ul>
           </li>
           <li class="bottommenu-part">
-            <ul>
-              <li><a href="/">Законодательство</a></li>
-              <li><a href="/">Организациям</a></li>
-              <li><a href="/">Частным лицам</a></li>
-              <li><a href="/">Сотрудничество</a></li>
+            <ul itemscope itemtype="http://schema.org/SiteNavigationElement https://schema.org/ItemList">
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" itemprop="item"><span itemprop="name">Законодательство</span></a>
+                <meta itemprop="position" content="1" />
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" itemprop="item"><span itemprop="name">Организациям</span></a>
+                <meta itemprop="position" content="2" />
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" itemprop="item"><span itemprop="name">Частным лицам</span></a>
+                <meta itemprop="position" content="3" />
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" itemprop="item"><span itemprop="name">Сотрудничество</span></a>
+                <meta itemprop="position" content="4" />
+              </li>
             </ul>
           </li>
           <li class="bottommenu-part">
-            <ul>
-              <li><a href="/">Карта</a></li>
-              <li><a href="/">Оплата</a></li>
-              <li><a href="/">Блог</a></li>
+            <ul itemscope itemtype="http://schema.org/SiteNavigationElement https://schema.org/ItemList">
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" itemprop="item"><span itemprop="name">Карта</span></a>
+                <meta itemprop="position" content="1" />
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" itemprop="item"><span itemprop="name">Оплата</span></a>
+                <meta itemprop="position" content="2" />
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" itemprop="item"><span itemprop="name">Блог</span></a>
+                <meta itemprop="position" content="3" />
+              </li>
             </ul>
           </li>
           <li class="bottommenu-part">
-            <ul>
-              <li><a href="/">Полезная информация</a></li>
-              <li><a href="/">Обратная связь</a></li>
-              <li><a href="/">Отзывы</a></li>
-              <li><a href="/">Вакансии</a></li>
+            <ul itemscope itemtype="http://schema.org/SiteNavigationElement https://schema.org/ItemList">
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" itemprop="item"><span itemprop="name">Полезная информация</span></a>
+                <meta itemprop="position" content="1" />
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" itemprop="item"><span itemprop="name">Обратная связь</span></a>
+                <meta itemprop="position" content="2" />
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" itemprop="item"><span itemprop="name">Отзывы</span></a>
+                <meta itemprop="position" content="3" />
+              </li>
+              <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="/" itemprop="item"><span itemprop="name">Вакансии</span></a>
+                <meta itemprop="position" content="4" />
+              </li>
             </ul>
           </li>
         </ul>
       </div>
       <div class="phone_socials">
-        <div class="phone-big"><a href="tel:+74951881122">+7 (495) 188-11-22</a></div>
-        <div class="socials">
-          <a class="social" href="/"><i class="fab fa-twitter"></i></a>
-          <a class="social" href="/"><i class="fab fa-vk"></i></a>
-          <a class="social" href="/"><i class="fab fa-facebook-f"></i></a>
-          <a class="social" href="/"><i class="fab fa-instagram"></i></a>
-        </div>
+        <div class="phone-big"><a href="tel:+74951881122"><span itemprop="telephone">+7 (495) 188-11-22</span></a></div>
+        <ul class="socials" itemscope itemtype="http://schema.org/SiteNavigationElement https://schema.org/ItemList">
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a class="social" href="/" itemprop="item">
+              <i class="fab fa-twitter"></i>
+              <span class="visually-hidden" itemprop="name">Twitter</span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a class="social" href="/" itemprop="item">
+              <i class="fab fa-vk"></i>
+              <span class="visually-hidden" itemprop="name">Вконтакте</span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a class="social" href="/" itemprop="item">
+              <i class="fab fa-facebook-f"></i>
+              <span class="visually-hidden" itemprop="name">Facebook</span>
+            </a>
+            <meta itemprop="position" content="3" />
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a class="social" href="/" itemprop="item">
+              <i class="fab fa-instagram"></i>
+              <span class="visually-hidden" itemprop="name">Instagram</span>
+            </a>
+            <meta itemprop="position" content="4" />
+          </li>
+        </ul>
       </div>
     </div>
     <div class="footer-bottom">

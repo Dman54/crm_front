@@ -187,7 +187,8 @@
 .object-socials {
   display: flex;
 }
-.object-socials > * {
+.object-socials a {
+  display: block;
   font-size: 13px;
   background: rgba(0, 0, 0, 0.8);
   border-radius: 3px;
@@ -198,10 +199,10 @@
   margin-right: 10px;
   text-align: center;
 }
-.object-socials > *:last-child {
+.object-socials li:last-child a {
   margin-right: 0;
 }
-.object-socials > *:hover {
+.object-socials a:hover {
   background: #00aeae;
 }
 .object-info-name {
