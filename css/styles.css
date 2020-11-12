@@ -26,7 +26,8 @@ button {
 a {
   text-decoration: none;
 }
-ul {
+ul,
+ol {
   list-style-type: none;
 }
 .visually-hidden {
