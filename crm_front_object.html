@@ -90,22 +90,22 @@
       <i class="fas fa-bars"></i>
       <ul class="topnav-second">
         <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-          <a itemprop="url" href="/zakon"><span itemprop="name">Законы</span></a>
+          <a itemprop="url" href="/"><span itemprop="name">Законы</span></a>
         </li>
         <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-          <a itemprop="url" class="active" href="/organizations"><span itemprop="name">Организациям</span></a>
+          <a itemprop="url" class="active" href="/"><span itemprop="name">Организациям</span></a>
         </li>
         <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-          <a itemprop="url" href="/chastn"><span itemprop="name">Частным лицам</span></a>
+          <a itemprop="url" href="/"><span itemprop="name">Частным лицам</span></a>
         </li>
         <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-          <a itemprop="url" href="/map"><span itemprop="name">Карта</span></a>
+          <a itemprop="url" href="/"><span itemprop="name">Карта</span></a>
         </li>
         <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-          <a itemprop="url" href="/pay"><span itemprop="name">Оплата</span></a>
+          <a itemprop="url" href="/"><span itemprop="name">Оплата</span></a>
         </li>
         <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-          <a itemprop="url" href="/blog"><span itemprop="name">Блог</span></a>
+          <a itemprop="url" href="/"><span itemprop="name">Блог</span></a>
         </li>
       </ul>
     </nav>
@@ -389,19 +389,19 @@
               <div class="object-name" itemprop="name">Хостел возле метро Сокол</div>
               <ul class="object-socials">
                 <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                  <a class="social" href="/vk" itemprop="url">
+                  <a class="social" href="/" itemprop="url">
                     <i class="fab fa-vk"></i>
                     <span class="visually-hidden" itemprop="name">Вконтакте</span>
                   </a>
                 </li>
                 <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                  <a class="social" href="/fb" itemprop="url">
+                  <a class="social" href="/" itemprop="url">
                     <i class="fab fa-facebook-f"></i>
                     <span class="visually-hidden" itemprop="name">Facebook</span>
                   </a>
                 </li>
                 <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                  <a class="social" href="/tw" itemprop="url">
+                  <a class="social" href="/" itemprop="url">
                     <i class="fab fa-twitter"></i>
                     <span class="visually-hidden" itemprop="name">Twitter</span>
                   </a>
@@ -502,14 +502,37 @@
 
             <div class="object-info-name">Свободные номера</div>
             <div class="object-rooms-content">
-              <div class="object-room" itemprop="containsPlace" itemscope itemtype="http://schema.org/HotelRoom">
+              <div class="object-room" itemprop="containsPlace" itemscope
+                itemtype="http://schema.org/HotelRoom http://schema.org/Product">
+                <meta itemprop="sku" content="0000000001">
+                <meta itemprop="mpn" content="0000000001">
+                <div class="visually-hidden" itemprop="brand" itemscope itemtype="https://schema.org/Organization">
+                  <meta itemprop="name" content="RentCode">
+                  <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                    <img itemprop="contentUrl url image" src="https://dman54.github.io/crm_front/img/logo.jpg"
+                      alt="RentCode">
+                    <meta itemprop="width" content="199">
+                    <meta itemprop="height" content="24">
+                    <meta itemprop="name" content="RentCode">
+                  </div>
+                  <meta itemprop="telephone" content="+7 (495) 188-11-22">
+                  <meta itemprop="address" content="Россия">
+                </div>
+                <div class="visually-hidden" itemprop="aggregateRating" itemscope
+                  itemtype="https://schema.org/AggregateRating">
+                  <meta itemprop="worstRating" content="1">
+                  <meta itemprop="ratingValue" content="5">
+                  <meta itemprop="bestRating" content="5">
+                  <meta itemprop="ratingCount" content="10">
+                  <meta itemprop="reviewCount" content="2">
+                </div>
                 <div class="object-room-head">
                   <div class="object-room-img">
-                    <img itemprop="photo" src="img/photo1.jpg" alt="4-местный КОМФОРТ">
+                    <img itemprop="photo image" src="img/photo1.jpg" alt="4-местный КОМФОРТ">
                   </div>
                   <div class="object-room-header">
                     <div class="object-room-name" itemprop="name">4-местный КОМФОРТ</div>
-                    <div class="object-room-seats">
+                    <div class="object-room-seats" itemprop="description">
                       <div class="object-room-seats-block">
                         <span class="object-room-seats-all">
                           Всего мест:
@@ -536,127 +559,6 @@
                       <meta itemprop="unitCode" content="IE">
                     </span>
 
-                    <div itemprop="makesOffer" itemscope itemtype="https://schema.org/Offer">
-                      <span itemprop="name">Flex-rate</span> <span itemprop="description">Terms and conditions go
-                        here...</span>
-                      <link itemprop="businessFunction" href="http://purl.org/goodrelations/v1#LeaseOut"><span
-                        itemprop="priceSpecification" itemscope itemtype="https://schema.org/UnitPriceSpecification">
-                        <meta itemprop="priceCurrency" content="EUR">€ <span itemprop="price">99</span>
-                        <meta itemprop="unitCode" content="DAY">per room per day To save this rate, book by
-                        <meta itemprop="validThrough" content="2016-08-31">August 31, 2016</span>
-                    </div>
-
-                    <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                      <link itemprop="businessFunction" href="http://purl.org/goodrelations/v1#LeaseOut" />
-
-                      Must be booked at least <span itemprop="advanceBookingRequirement" itemscope
-                        itemtype="http://schema.org/QuantitativeValue">
-                        <span itemprop="minValue">7</span>
-                        <meta itemprop="unitCode" content="DAY"> days before the stay
-                      </span>
-
-                      For stays between:
-                      <meta itemprop="availabilityStarts" content="2016-01-15">January 15 -
-                      <meta itemprop="availabilityEnds" content="2016-01-31">31, 2016
-
-                      <span itemprop="priceSpecification" itemscope itemtype="http://schema.org/UnitPriceSpecification">
-
-                        Price valid if booked between:
-                        <meta itemprop="validFrom" content="2015-10-01">October 1 -
-                        <meta itemprop="validThrough" content="2015-12-31">December 31, 2015
-
-                        <meta itemprop="price" content="239">
-                        <meta itemprop="priceCurrency" content="RUB">
-                        <meta itemprop="unitCode" content="DAY">
-                        <!-- IE is the UN/CEFACT Code for person -->
-                        <!-- <meta itemprop="unitCode" content="IE">per person (based on double occupancy) -->
-                      </span>
-                    </span>
-
-                    <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                      <link itemprop="businessFunction" href="http://purl.org/goodrelations/v1#LeaseOut" />
-                      Winter
-                      <meta itemprop="availabilityStarts" content="2016-11-01"> (November 1 -
-                      <meta itemprop="availabilityEnds" content="2017-05-31">May 31)
-                      <span itemprop="priceSpecification" itemscope itemtype="http://schema.org/UnitPriceSpecification">
-                        <meta itemprop="price" content="99.00">
-                        <meta itemprop="priceCurrency" content="RUB">
-                        <meta itemprop="unitCode" content="DAY">
-                      </span>
-                    </span>
-
-                    <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                      <link itemprop="businessFunction" href="http://purl.org/goodrelations/v1#LeaseOut" />
-                      <span itemprop="priceSpecification" itemscope
-                        itemtype="http://schema.org/CompoundPriceSpecification">
-                        <span itemprop="priceComponent" itemscope itemtype="http://schema.org/UnitPriceSpecification">
-                          <meta itemprop="price" content="400.00">$400.00
-                          <meta itemprop="priceCurrency" content="USD">
-                          <!-- WEE is the UN/CEFACT Code for week -->
-                          <meta itemprop="unitCode" content="WEE"> per week
-                        </span>plus a
-                        <span itemprop="priceComponent" itemscope itemtype="http://schema.org/UnitPriceSpecification">
-                          <span itemprop="name">cleaning fee</span> of
-                          <meta itemprop="price" content="100.00">$100.00
-                          <meta itemprop="priceCurrency" content="USD">
-                          <!-- C62 is the UN/CEFACT Code for no unit -->
-                          <meta itemprop="unitCode" content="C62"> per stay
-                        </span>
-                      </span>
-                    </span>
-
-                    Occupancy: <span itemprop="occupancy" itemscope itemtype="http://schema.org/QuantitativeValue">
-                      Up to <span itemprop="maxValue">2</span>
-                      <meta itemprop="unitCode" content="IE">
-                      <span itemprop="name">adults</span>
-                    </span> and
-                    <span itemprop="occupancy" itemscope itemtype="http://schema.org/QuantitativeValue">
-                      <span itemprop="maxValue">2</span>
-                      <meta itemprop="unitCode" content="IE">
-                      <span itemprop="name">children</span>
-                    </span>
-                    Rate: <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                      <link itemprop="businessFunction" href="http://purl.org/goodrelations/v1#LeaseOut" />
-                      <span itemprop="priceSpecification" itemscope itemtype="http://schema.org/UnitPriceSpecification">
-                        <meta itemprop="price" content="249.00">$249.00
-                        <meta itemprop="priceCurrency" content="USD">
-                        <!-- DAY is the UN/CEFACT Code for day/night -->
-                        <meta itemprop="unitCode" content="DAY">per night
-                      </span>
-                    </span>
-
-                    Rate: <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                      <link itemprop="businessFunction" href="http://purl.org/goodrelations/v1#LeaseOut" />
-                      <span itemprop="priceSpecification" itemscope itemtype="http://schema.org/UnitPriceSpecification">
-                        <meta itemprop="price" content="99.00">$99.00
-                        <meta itemprop="priceCurrency" content="USD">
-                        <!-- DAY is the UN/CEFACT Code for day/night -->
-                        <meta itemprop="unitCode" content="DAY"> per night
-                      </span> for stays of at least
-                      <span itemprop="eligibleDuration" itemscope itemtype="http://schema.org/QuantitativeValue">
-                        <span itemprop="minValue">3</span>
-                        <meta itemprop="unitCode" content="DAY"> nights
-                      </span>
-                    </span>
-
-                    <span itemprop="priceSpecification" itemscope itemtype="http://schema.org/UnitPriceSpecification">
-                      <meta itemprop="price" content="99.00">$99.00
-                      <meta itemprop="priceCurrency" content="USD">
-                      <meta itemprop="unitCode" content="DAY">per night
-                    </span>
-                    <span itemprop="includesObject" itemscope itemtype="http://schema.org/TypeAndQuantityNode">
-                      <span itemprop="typeOfGood" itemscope itemtype="http://schema.org/HotelRoom">
-                        <span itemprop="name">Single Room</span>
-                        <span itemprop="description">Our single rooms are cosy and comfortable.</span>
-                      </span>
-                    </span>
-                    <span itemprop="includesObject" itemscope itemtype="http://schema.org/TypeAndQuantityNode">
-                      <span itemprop="typeOfGood" itemscope itemtype="http://schema.org/FoodService">
-                        <span itemprop="name">Breakfast</span>
-                        <span itemprop="description">Our famous healthy starter breakfast is included.</span>
-                      </span>
-                    </span>
-
                     <div class="object-room-facilities-wrapper">
                       <div class="object-room-facilities">
                         <div class="object-room-facility" itemprop="amenityFeature" itemscope
@@ -674,138 +576,326 @@
                           <i class="flaticon flaticon-toilet"></i> <span itemprop="name">Туалет</span>
                           <meta itemprop="value" content="True">
                         </div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-bathroom"></i> Ванная</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-stove"></i> Плита</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-clean-linen-basket"></i> Смена белья</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-cctv"></i> Видеонаблюдение</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-security"></i> Охрана</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-gift"></i> Без комиссий и залогов</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-24-hours"></i> Круглосуточный доступ</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-toilet-1"></i> Чистота</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-comfortable"></i> Комфорт</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-area"></i> 10 м2</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-free-parking"></i> Бесплатная парковка</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-taking-a-shower"></i> Общая ванная комната</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-bath-curtain"></i> Собственная ванная комната</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-windows"></i> Окно</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-panorama"></i> Красивый вид</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-panorama-1"></i> Красивый вид</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-no-smoke"></i> Для некурящих</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-double-bed"></i> Двуспальная кровать</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-bunk-bed"></i> Двухъярусная кровать</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-single-bed"></i> Односпальная кровать</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-family-room"></i> Семейный номер</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-wardrobe"></i> Шкаф или гардероб</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-livingroom-black-curtains"></i> Затемнённые шторы</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-free"></i> Бесплатная отмена до 16 октября*</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-fasting"></i> Питание не включено</div>
-                        <div class="object-room-facility">
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-bathroom"></i> <span itemprop="name">Ванная</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-stove"></i> <span itemprop="name">Плита</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-clean-linen-basket"></i> <span itemprop="name">Смена белья</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-cctv"></i> <span itemprop="name">Видеонаблюдение</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-security"></i> <span itemprop="name">Охрана</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-gift"></i> <span itemprop="name">Без комиссий и залогов</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-24-hours"></i> <span itemprop="name">Круглосуточный доступ</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-toilet-1"></i> <span itemprop="name">Чистота</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-comfortable"></i> <span itemprop="name">Комфорт</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-area"></i> <span itemprop="name">10 м2</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-free-parking"></i> <span itemprop="name">Бесплатная
+                            парковка</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-taking-a-shower"></i> <span itemprop="name">Общая ванная
+                            комната</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-bath-curtain"></i> <span itemprop="name">Собственная ванная
+                            комната</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-windows"></i> <span itemprop="name">Окно</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-panorama"></i> <span itemprop="name">Красивый вид</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-panorama-1"></i> <span itemprop="name">Красивый вид</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-no-smoke"></i> <span itemprop="name">Для некурящих</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-double-bed"></i> <span itemprop="name">Двуспальная кровать</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-bunk-bed"></i> <span itemprop="name">Двухъярусная кровать</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-single-bed"></i> <span itemprop="name">Односпальная кровать</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-family-room"></i> <span itemprop="name">Семейный номер</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-wardrobe"></i> <span itemprop="name">Шкаф или гардероб</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-livingroom-black-curtains"></i> <span itemprop="name">Затемнённые
+                            шторы</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-free"></i> <span itemprop="name">Бесплатная отмена до 16
+                            октября*</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-fasting"></i> <span itemprop="name">Питание не включено</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
                           <i class="flaticon flaticon-meal"></i>
                           <i class="flaticon flaticon-children-cutlery"></i>
-                          <i class="flaticon flaticon-breakfast"></i> Питание включено</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-breakfast-1"></i> Завтрак включён</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-click-per-pay"></i> Оплата сейчас</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-payment"></i> Оплата на месте - Для бронирования нужна карта
+                          <i class="flaticon flaticon-breakfast"></i> <span itemprop="name">Питание включено</span>
+                          <meta itemprop="value" content="True">
                         </div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-fridge"></i> Холодильник</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-dinner-table"></i> Обеденный уголок</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-watching-tv"></i> Телевизор</div>
-                        <div class="object-room-facility">
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-breakfast-1"></i> <span itemprop="name">Завтрак включён</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-click-per-pay"></i> <span itemprop="name">Оплата сейчас</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-payment"></i> <span itemprop="name">Оплата на месте - Для
+                            бронирования нужна карта</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-fridge"></i> <span itemprop="name">Холодильник</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-dinner-table"></i> <span itemprop="name">Обеденный уголок</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-watching-tv"></i> <span itemprop="name">Телевизор</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
                           <i class="flaticon flaticon-desktop-computer"></i>Компьютер</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-wifi-router"></i> Роутер Wi-Fi</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-multifunction-printer"></i> МФУ</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-hair-dryer"></i> Фен</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-iron"></i> Утюг</div>
-                        <div class="object-room-facility">
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-wifi-router"></i> <span itemprop="name">Роутер Wi-Fi</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-multifunction-printer"></i> <span itemprop="name">МФУ</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-hair-dryer"></i> <span itemprop="name">Фен</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-iron"></i> <span itemprop="name">Утюг</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
                           <i class="flaticon flaticon-bookshelf"></i>
-                          <i class="flaticon flaticon-shelving"></i> Индивидуальные полки</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-power-socket"></i> Индивидуальные розетки</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-table"></i> Стол</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-folding-chair"></i> Стулья</div>
-                        <div class="object-room-facility">
+                          <i class="flaticon flaticon-shelving"></i> <span itemprop="name">Индивидуальные полки</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-power-socket"></i> <span itemprop="name">Индивидуальные
+                            розетки</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-table"></i> <span itemprop="name">Стол</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-folding-chair"></i> <span itemprop="name">Стулья</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
                           <i class="flaticon flaticon-boxes"></i>
-                          <i class="flaticon flaticon-boxes-1"></i> Ящики</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-hangers"></i> Вешалки</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-washing-machine"></i> Стиралка</div>
-                        <div class="object-room-facility">
+                          <i class="flaticon flaticon-boxes-1"></i> <span itemprop="name">Ящики</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-hangers"></i> <span itemprop="name">Вешалки</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-washing-machine"></i> <span itemprop="name">Стиралка</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
                           <i class="flaticon flaticon-bed-sheets"></i>
-                          <i class="flaticon flaticon-bed-linen"></i> Белье</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-ironing-board"></i> Гладильные принадлежности</div>
-                        <div class="object-room-facility">Двухразовая уборка</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-kettle"></i> Чайник</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-safe-box"></i> Сейф</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-refrigerator"></i> Минибар</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-air-conditioner"></i> Кондиционер</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-antibacterial"></i> Подходит для гостей с аллергией</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-water"></i> Бутилированная вода</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-towel"></i> Полотенца</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-toiletries"></i> Туалетные принадлежности</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-shower"></i> Душ</div>
-                        <div class="object-room-facility">
+                          <i class="flaticon flaticon-bed-linen"></i> <span itemprop="name">Белье</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-ironing-board"></i> <span itemprop="name">Гладильные
+                            принадлежности</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">Двухразовая уборка</div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-kettle"></i> <span itemprop="name">Чайник</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-safe-box"></i> <span itemprop="name">Сейф</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-refrigerator"></i> <span itemprop="name">Минибар</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-air-conditioner"></i> <span itemprop="name">Кондиционер</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-antibacterial"></i> <span itemprop="name">Подходит для гостей с
+                            аллергией</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-water"></i> <span itemprop="name">Бутилированная вода</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-towel"></i> <span itemprop="name">Полотенца</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-toiletries"></i> <span itemprop="name">Туалетные
+                            принадлежности</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-shower"></i> <span itemprop="name">Душ</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
                           <i class="flaticon flaticon-no-audio"></i>
                           <i class="flaticon flaticon-no-sound"></i>
                           <i class="flaticon flaticon-sound-off"></i>
-                          <i class="flaticon flaticon-radio"></i> Звукоизоляция</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-microwave"></i> Микроволновка</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-bathrobe"></i> Халат</div>
-                        <div class="object-room-facility">
-                          <i class="flaticon flaticon-mirror"></i> Зеркало</div>
-                        <div class="object-room-facility">
+                          <i class="flaticon flaticon-radio"></i> <span itemprop="name">Звукоизоляция</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-microwave"></i> <span itemprop="name">Микроволновка</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-bathrobe"></i> <span itemprop="name">Халат</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
+                          <i class="flaticon flaticon-mirror"></i> <span itemprop="name">Зеркало</span>
+                          <meta itemprop="value" content="True">
+                        </div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification">
                           <i class="flaticon flaticon-cordless-phone"></i>
                           <i class="flaticon flaticon-phone"></i>
-                          <i class="flaticon flaticon-dial-phone"></i> Телефон</div>
+                          <i class="flaticon flaticon-dial-phone"></i> <span itemprop="name">Телефон</span>
+                          <meta itemprop="value" content="True">
+                        </div>
                       </div>
                       <div class="show_more_facilities">
                         <span class="showed">Скрыть удобства</span>
@@ -818,8 +908,21 @@
                   Варианты обслуживания:
                 </div>
                 <div class="object-room-table-wrapper">
-                  <div class="object-room-table">
-                    <div class="object-room-table-row">
+                  <div class="object-room-table" itemprop="offers" itemscope
+                    itemtype="https://schema.org/AggregateOffer">
+                    <meta itemprop="price" content="299">
+                    <meta itemprop="lowPrice" content="299">
+                    <meta itemprop="highPrice" content="399">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <meta itemprop="offerCount" content="2">
+                    <div class="object-room-table-row" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                      <link itemprop="businessFunction" href="http://purl.org/goodrelations/v1#LeaseOut" />
+                      <link itemprop="acceptedPaymentMethod" href="http://purl.org/goodrelations/v1#Cash" />
+                      <link itemprop="acceptedPaymentMethod"
+                        href="http://purl.org/goodrelations/v1#PaymentMethodCreditCard" />
+                      <link itemprop="acceptedPaymentMethod"
+                        href="http://purl.org/goodrelations/v1#ByBankTransferInAdvance" />
+                      <link itemprop="availability" href="http://schema.org/InStock" />
                       <div class="object-room-table-row-cell">
                         <div class="object-room-facility-cell">
                           Питание не включено
@@ -828,40 +931,84 @@
                           Оплата сейчас
                         </div>
                       </div>
-                      <div class="object-room-table-row-cell">
-                        Цена: <span class="price-value">299</span> <span class="price-text">р/сутки</span>
+                      <div class="object-room-table-row-cell" itemprop="priceSpecification" itemscope
+                        itemtype="http://schema.org/UnitPriceSpecification">
+                        Цена: <span class="price-value" itemprop="price">299</span> <span
+                          class="price-text">р/сутки</span>
+                        <meta itemprop="priceCurrency" content="RUB">
+                        <meta itemprop="unitCode" content="DAY">
                       </div>
-                      <div class="object-room-table-row-cell">
-                        <button class="object-room-reserve-button">Забронировать</button>
+                      <div class="object-room-table-row-cell" itemprop="potentialAction" itemscope=""
+                        itemtype="http://schema.org/BuyAction">
+                        <a itemprop="target" href="/reserve" class="object-room-reserve-button">Забронировать</a>
                       </div>
                     </div>
-                    <div class="object-room-table-row">
+                    <div class="object-room-table-row" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                      <link itemprop="businessFunction" href="http://purl.org/goodrelations/v1#LeaseOut" />
+                      <link itemprop="acceptedPaymentMethod" href="http://purl.org/goodrelations/v1#Cash" />
+                      <link itemprop="acceptedPaymentMethod"
+                        href="http://purl.org/goodrelations/v1#PaymentMethodCreditCard" />
+                      <link itemprop="acceptedPaymentMethod"
+                        href="http://purl.org/goodrelations/v1#ByBankTransferInAdvance" />
+                      <link itemprop="availability" href="http://schema.org/InStock" />
                       <div class="object-room-table-row-cell">
-                        <div class="object-room-facility-cell">
-                          Питание включено
+                        <div class="object-room-facility-cell" itemprop="includesObject" itemscope
+                          itemtype="http://schema.org/TypeAndQuantityNode">
+                          <span itemprop="typeOfGood" itemscope itemtype="http://schema.org/FoodService">
+                            <span itemprop="name">Питание включено</span>
+                            <meta itemprop="description" content="Завтрак включен">
+                          </span>
                         </div>
                         <div class="object-room-facility-cell">
                           Оплата на месте
                         </div>
                       </div>
-                      <div class="object-room-table-row-cell">
-                        Цена: <span class="price-value">399</span> <span class="price-text">р/сутки</span>
+                      <div class="object-room-table-row-cell" itemprop="priceSpecification" itemscope
+                        itemtype="http://schema.org/UnitPriceSpecification">
+                        Цена: <span class="price-value" itemprop="price">399</span> <span
+                          class="price-text">р/сутки</span>
+                        <meta itemprop="priceCurrency" content="RUB">
+                        <meta itemprop="unitCode" content="DAY">
                       </div>
-                      <div class="object-room-table-row-cell">
-                        <button class="object-room-reserve-button">Забронировать</button>
+                      <div class="object-room-table-row-cell" itemprop="potentialAction" itemscope=""
+                        itemtype="http://schema.org/BuyAction">
+                        <a itemprop="target" href="/reserve" class="object-room-reserve-button">Забронировать</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="object-room" itemprop="containsPlace" itemscope itemtype="http://schema.org/HotelRoom">
+              <div class="object-room" itemprop="containsPlace" itemscope
+                itemtype="http://schema.org/HotelRoom http://schema.org/Product">
+                <meta itemprop="sku" content="0000000002">
+                <meta itemprop="mpn" content="0000000002">
+                <div class="visually-hidden" itemprop="brand" itemscope itemtype="https://schema.org/Organization">
+                  <meta itemprop="name" content="RentCode">
+                  <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                    <img itemprop="contentUrl url image" src="https://dman54.github.io/crm_front/img/logo.jpg"
+                      alt="RentCode">
+                    <meta itemprop="width" content="199">
+                    <meta itemprop="height" content="24">
+                    <meta itemprop="name" content="RentCode">
+                  </div>
+                  <meta itemprop="telephone" content="+7 (495) 188-11-22">
+                  <meta itemprop="address" content="Россия">
+                </div>
+                <div class="visually-hidden" itemprop="aggregateRating" itemscope
+                  itemtype="https://schema.org/AggregateRating">
+                  <meta itemprop="worstRating" content="1">
+                  <meta itemprop="ratingValue" content="5">
+                  <meta itemprop="bestRating" content="5">
+                  <meta itemprop="ratingCount" content="10">
+                  <meta itemprop="reviewCount" content="2">
+                </div>
                 <div class="object-room-head">
                   <div class="object-room-img">
-                    <img src="img/photo1.jpg" alt="4-местный СТАНДАРТ">
+                    <img itemprop="photo image" src="img/photo1.jpg" alt="4-местный СТАНДАРТ">
                   </div>
                   <div class="object-room-header">
                     <div class="object-room-name" itemprop="name">4-местный СТАНДАРТ</div>
-                    <div class="object-room-seats">
+                    <div class="object-room-seats" itemprop="description">
                       <div class="object-room-seats-block">
                         <span class="object-room-seats-all">
                           Всего мест:
@@ -880,9 +1027,21 @@
                       </div>
                     </div>
 
+                    <meta itemprop="bed" content="Одноярусная кровать">
+                    <span class="visually-hidden" itemprop="occupancy" itemscope
+                      itemtype="http://schema.org/QuantitativeValue">
+                      <span itemprop="maxValue">4</span>
+                      <span itemprop="minValue">0</span>
+                      <meta itemprop="unitCode" content="IE">
+                    </span>
+
                     <div class="object-room-facilities-wrapper">
                       <div class="object-room-facilities">
-                        <div class="object-room-facility"><i class="flaticon flaticon-area"></i> 3 м2</div>
+                        <div class="object-room-facility" itemprop="amenityFeature" itemscope
+                          itemtype="http://schema.org/LocationFeatureSpecification"><i
+                            class="flaticon flaticon-area"></i> <span itemprop="name">3 м2</span>
+                          <meta itemprop="value" content="True">
+                        </div>
                       </div>
                       <div class="show_more_facilities">
                         <span class="showed">Скрыть удобства</span>
@@ -895,8 +1054,21 @@
                   Варианты обслуживания:
                 </div>
                 <div class="object-room-table-wrapper">
-                  <div class="object-room-table">
-                    <div class="object-room-table-row">
+                  <div class="object-room-table" itemprop="offers" itemscope
+                    itemtype="https://schema.org/AggregateOffer">
+                    <meta itemprop="price" content="259">
+                    <meta itemprop="lowPrice" content="259">
+                    <meta itemprop="highPrice" content="299">
+                    <meta itemprop="priceCurrency" content="RUB">
+                    <meta itemprop="offerCount" content="2">
+                    <div class="object-room-table-row" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                      <link itemprop="businessFunction" href="http://purl.org/goodrelations/v1#LeaseOut" />
+                      <link itemprop="acceptedPaymentMethod" href="http://purl.org/goodrelations/v1#Cash" />
+                      <link itemprop="acceptedPaymentMethod"
+                        href="http://purl.org/goodrelations/v1#PaymentMethodCreditCard" />
+                      <link itemprop="acceptedPaymentMethod"
+                        href="http://purl.org/goodrelations/v1#ByBankTransferInAdvance" />
+                      <link itemprop="availability" href="http://schema.org/InStock" />
                       <div class="object-room-table-row-cell">
                         <div class="object-room-facility-cell">
                           Питание не включено
@@ -905,27 +1077,48 @@
                           Оплата сейчас
                         </div>
                       </div>
-                      <div class="object-room-table-row-cell">
-                        Цена: <span class="price-value">259</span> <span class="price-text">р/сутки</span>
+                      <div class="object-room-table-row-cell" itemprop="priceSpecification" itemscope
+                        itemtype="http://schema.org/UnitPriceSpecification">
+                        Цена: <span class="price-value" itemprop="price">259</span> <span
+                          class="price-text">р/сутки</span>
+                        <meta itemprop="priceCurrency" content="RUB">
+                        <meta itemprop="unitCode" content="DAY">
                       </div>
-                      <div class="object-room-table-row-cell">
-                        <button class="object-room-reserve-button">Забронировать</button>
+                      <div class="object-room-table-row-cell" itemprop="potentialAction" itemscope=""
+                        itemtype="http://schema.org/BuyAction">
+                        <a itemprop="target" href="/reserve" class="object-room-reserve-button">Забронировать</a>
                       </div>
                     </div>
-                    <div class="object-room-table-row">
+                    <div class="object-room-table-row" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                      <link itemprop="businessFunction" href="http://purl.org/goodrelations/v1#LeaseOut" />
+                      <link itemprop="acceptedPaymentMethod" href="http://purl.org/goodrelations/v1#Cash" />
+                      <link itemprop="acceptedPaymentMethod"
+                        href="http://purl.org/goodrelations/v1#PaymentMethodCreditCard" />
+                      <link itemprop="acceptedPaymentMethod"
+                        href="http://purl.org/goodrelations/v1#ByBankTransferInAdvance" />
+                      <link itemprop="availability" href="http://schema.org/InStock" />
                       <div class="object-room-table-row-cell">
-                        <div class="object-room-facility-cell">
-                          Питание включено
+                        <div class="object-room-facility-cell" itemprop="includesObject" itemscope
+                          itemtype="http://schema.org/TypeAndQuantityNode">
+                          <span itemprop="typeOfGood" itemscope itemtype="http://schema.org/FoodService">
+                            <span itemprop="name">Питание включено</span>
+                            <meta itemprop="description" content="Завтрак включен">
+                          </span>
                         </div>
                         <div class="object-room-facility-cell">
                           Оплата на месте
                         </div>
                       </div>
-                      <div class="object-room-table-row-cell">
-                        Цена: <span class="price-value">299</span> <span class="price-text">р/сутки</span>
+                      <div class="object-room-table-row-cell" itemprop="priceSpecification" itemscope
+                        itemtype="http://schema.org/UnitPriceSpecification">
+                        Цена: <span class="price-value" itemprop="price">299</span> <span
+                          class="price-text">р/сутки</span>
+                        <meta itemprop="priceCurrency" content="RUB">
+                        <meta itemprop="unitCode" content="DAY">
                       </div>
-                      <div class="object-room-table-row-cell">
-                        <button class="object-room-reserve-button">Забронировать</button>
+                      <div class="object-room-table-row-cell" itemprop="potentialAction" itemscope=""
+                        itemtype="http://schema.org/BuyAction">
+                        <a itemprop="target" href="/reserve" class="object-room-reserve-button">Забронировать</a>
                       </div>
                     </div>
                   </div>
@@ -1081,55 +1274,55 @@
           <li class="bottommenu-part">
             <ul>
               <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <a href="/obshags" itemprop="url"><span itemprop="name">Общежития</span></a>
+                <a href="/" itemprop="url"><span itemprop="name">Общежития</span></a>
               </li>
               <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <a href="/hostels" itemprop="url"><span itemprop="name">Хостелы</span></a>
-              </li>
-            </ul>
-          </li>
-          <li class="bottommenu-part">
-            <ul>
-              <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <a href="/zakon" itemprop="url"><span itemprop="name">Законодательство</span></a>
-              </li>
-              <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <a href="/organizations" itemprop="url"><span itemprop="name">Организациям</span></a>
-              </li>
-              <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <a href="/chastn" itemprop="url"><span itemprop="name">Частным лицам</span></a>
-              </li>
-              <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <a href="/toogether" itemprop="url"><span itemprop="name">Сотрудничество</span></a>
+                <a href="/" itemprop="url"><span itemprop="name">Хостелы</span></a>
               </li>
             </ul>
           </li>
           <li class="bottommenu-part">
             <ul>
               <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <a href="/map" itemprop="url"><span itemprop="name">Карта</span></a>
+                <a href="/" itemprop="url"><span itemprop="name">Законодательство</span></a>
               </li>
               <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <a href="/pay" itemprop="url"><span itemprop="name">Оплата</span></a>
+                <a href="/" itemprop="url"><span itemprop="name">Организациям</span></a>
               </li>
               <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <a href="/blog" itemprop="url"><span itemprop="name">Блог</span></a>
+                <a href="/" itemprop="url"><span itemprop="name">Частным лицам</span></a>
+              </li>
+              <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <a href="/" itemprop="url"><span itemprop="name">Сотрудничество</span></a>
               </li>
             </ul>
           </li>
           <li class="bottommenu-part">
             <ul>
               <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <a href="/usefull_info" itemprop="url"><span itemprop="name">Полезная информация</span></a>
+                <a href="/" itemprop="url"><span itemprop="name">Карта</span></a>
               </li>
               <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <a href="/contacts" itemprop="url"><span itemprop="name">Обратная связь</span></a>
+                <a href="/" itemprop="url"><span itemprop="name">Оплата</span></a>
               </li>
               <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <a href="/reviews" itemprop="url"><span itemprop="name">Отзывы</span></a>
+                <a href="/" itemprop="url"><span itemprop="name">Блог</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="bottommenu-part">
+            <ul>
+              <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <a href="/" itemprop="url"><span itemprop="name">Полезная информация</span></a>
               </li>
               <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-                <a href="/vacansies" itemprop="url"><span itemprop="name">Вакансии</span></a>
+                <a href="/" itemprop="url"><span itemprop="name">Обратная связь</span></a>
+              </li>
+              <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <a href="/" itemprop="url"><span itemprop="name">Отзывы</span></a>
+              </li>
+              <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <a href="/" itemprop="url"><span itemprop="name">Вакансии</span></a>
               </li>
             </ul>
           </li>
@@ -1139,25 +1332,25 @@
         <div class="phone-big"><a href="tel:+74951881122"><span>+7 (495) 188-11-22</span></a></div>
         <ul class="socials">
           <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-            <a class="social" href="/tw" itemprop="url">
+            <a class="social" href="/" itemprop="url">
               <i class="fab fa-twitter"></i>
               <span class="visually-hidden" itemprop="name">Twitter</span>
             </a>
           </li>
           <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-            <a class="social" href="/vk" itemprop="url">
+            <a class="social" href="/" itemprop="url">
               <i class="fab fa-vk"></i>
               <span class="visually-hidden" itemprop="name">Вконтакте</span>
             </a>
           </li>
           <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-            <a class="social" href="/fb" itemprop="url">
+            <a class="social" href="/" itemprop="url">
               <i class="fab fa-facebook-f"></i>
               <span class="visually-hidden" itemprop="name">Facebook</span>
             </a>
           </li>
           <li itemscope itemtype="http://schema.org/SiteNavigationElement">
-            <a class="social" href="/inst" itemprop="url">
+            <a class="social" href="/" itemprop="url">
               <i class="fab fa-instagram"></i>
               <span class="visually-hidden" itemprop="name">Instagram</span>
             </a>
