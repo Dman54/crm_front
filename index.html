@@ -119,10 +119,18 @@
   </header>
   <main class="container" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
     <ul class="nav-buttons">
-      <li><a href="crm_front.html" class="btn-green">В каталог</a></li>
-      <li><a href="crm_front_object.html" class="btn-green">На страницу хостела</a></li>
-      <li><a href="https://dman54.github.io/crm/crm.html" class="btn-green" target="_blank" rel="noopener noreferrer">В
-          личный кабинет</a></li>
+      <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <a itemprop="url" href="crm_front.html" class="btn-green"><span itemprop="name">В каталог</span></a>
+      </li>
+      <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <a itemprop="url" href="crm_front_object.html" class="btn-green"><span itemprop="name">На страницу
+            хостела</span></a>
+      </li>
+      <li itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <a itemprop="url" href="https://dman54.github.io/crm/crm.html" class="btn-green" target="_blank"
+          rel="noopener noreferrer"><span itemprop="name">В
+            личный кабинет</span></a>
+      </li>
     </ul>
     <!-- <div class="nav-tabs">
       <div class="nav-tab">Общежития</div>
